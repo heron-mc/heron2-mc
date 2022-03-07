@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src\controls\SimpleFeatureInfo.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+
+</head>
+<body class="yui3-skin-sam" onload="onLoad()">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <!--
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
+            -->
+            <h1></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                            <!--
+                            -->
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ext.application.html">Ext.application</a></li>
+                                <li><a href="../classes/Heron.Application.html">Heron.Application</a></li>
+                                <li><a href="../classes/Heron.base.Control.html">Heron.base.Control</a></li>
+                                <li><a href="../classes/Heron.base.MapCoordinate.html">Heron.base.MapCoordinate</a></li>
+                                <li><a href="../classes/Heron.base.Panel.html">Heron.base.Panel</a></li>
+                                <li><a href="../classes/Heron.controls.MapCoordinateX.html">Heron.controls.MapCoordinateX</a></li>
+                                <li><a href="../classes/Heron.controls.MapCoordinateY.html">Heron.controls.MapCoordinateY</a></li>
+                                <li><a href="../classes/Heron.controls.MapProjection.html">Heron.controls.MapProjection</a></li>
+                                <li><a href="../classes/Heron.controls.SimpleFeatureInfo.html">Heron.controls.SimpleFeatureInfo</a></li>
+                                <li><a href="../classes/Heron.controls.ZoomPreviousNext.html">Heron.controls.ZoomPreviousNext</a></li>
+                                <li><a href="../classes/Heron.debug.LogMapInfo.html">Heron.debug.LogMapInfo</a></li>
+                                <li><a href="../classes/Heron.debug.Test.html">Heron.debug.Test</a></li>
+                                <li><a href="../classes/Heron.OLUtils.html">Heron.OLUtils</a></li>
+                                <li><a href="../classes/Heron.Theme.html">Heron.Theme</a></li>
+                                <li><a href="../classes/Heron.Utils.html">Heron.Utils</a></li>
+                                <li><a href="../classes/Heron.widgets.HtmlPanel.html">Heron.widgets.HtmlPanel</a></li>
+                                <li><a href="../classes/Heron.widgets.MapBar.html">Heron.widgets.MapBar</a></li>
+                                <li><a href="../classes/Heron.widgets.MapPanel.html">Heron.widgets.MapPanel</a></li>
+                                <li><a href="../classes/Heron.widgets.SimpleFeatureInfoPanel.html">Heron.widgets.SimpleFeatureInfoPanel</a></li>
+                                <li><a href="../classes/Heron.widgets.SimpleLayerTreePanel.html">Heron.widgets.SimpleLayerTreePanel</a></li>
+                                <li><a href="../classes/Heron.widgets.ToolButton.html">Heron.widgets.ToolButton</a></li>
+                                <li><a href="../classes/Number.html">Number</a></li>
+                                <li><a href="../classes/shortcuts.html">shortcuts</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/Heron.html">Heron</a></li>
+                                <li><a href="../modules/Number.html">Number</a></li>
+                                <li><a href="../modules/shortcuts.html">shortcuts</a></li>
+                                <li><a href="../modules/String.html">String</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: src\controls\SimpleFeatureInfo.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+
+/* global ol,Ext,Heron */
+
+/**-----------------------------------------------------------------------------
+ * Gets the feature info from the first visibel WMS layer in the map
+ * when clicking in the map and shows it in a panel.
+ * When no panel is specified a the info is shown in a sliding popup.
+ * &lt;br&gt;&lt;small&gt;&lt;i&gt;type: &quot;simplefeatureinfo&quot;&lt;/i&gt;&lt;/small&gt;
+ * 
+ * @class Heron.controls.SimpleFeatureInfo
+ * @extends Heron.base.Control
+ * @constructor constructor
+ * @param {Object} config - The configuration.
+ * - For example:&lt;br&gt;
+ *     config.map&lt;br&gt;
+ *     config.infoPanelId&lt;br&gt;
+ *     config.options&lt;br&gt;
+ *     config.options.SimpleFeatureInfo.*&lt;br&gt;
+ */
+Ext.define(&quot;Heron.controls.SimpleFeatureInfo&quot;, {
+  extend: &quot;Heron.base.Control&quot;,
+  requires: [
+    &quot;Heron.base.Control&quot;,
+    &quot;Heron.Utils&quot;
+  ],
+  /**
+   * The info panel which shows the info.
+   * 
+   * @property {String} infoPanel
+   * @private
+   */
+  infoPanel: null,
+  /**
+   * The id of the info panel which shows the info.
+   * 
+   * @property {String} infoPanelId
+   * @private
+   */
+  infoPanelId: null,
+  /**---------------------------------------------------------------------------
+   * @method constructor
+   * @param {Object} config - The configuration.
+   */
+  constructor: function(config) {
+
+    console.log(&quot;Heron.controls.SimpleFeatureInfo.constructor&quot;);
+
+    // Check the config and merges the default config with the user config.
+    config = this.checkConfig(config,true);
+    if (!isSet(config))
+      return;
+
+    // Create this control.
+    this.callParent([config]);
+    
+    // Set needed properties to local default values if not set.
+    this.infoPanelId = checkOption(config.infoPanelId,this.infoPanelId);
+  },
+  /**---------------------------------------------------------------------------
+   * Installs or deinstalls the event handlers.
+   * 
+   * @method setEventHandlers
+   * @param {Boolean} flag - When True installs the event handlers else
+   * deinstalls them.
+   */
+  setEventHandlers: function(flag) {
+    console.log(&quot;Heron.controls.SimpleFeatureInfo.setEventHandlers&quot;);
+    if (flag===true) {
+      // Install event handlers.
+      this.map.on(&quot;singleclick&quot;,this.onMouseClick,this);
+      this.map.on(&quot;pointermove&quot;,this.onMouseMove,this);
+    } else {
+      // Deinstall event handlers.
+      this.map.un(&quot;singleclick&quot;,this.onMouseClick,this);
+      this.map.un(&quot;pointermove&quot;,this.onMouseMove,this);
+    }
+  },
+  /**---------------------------------------------------------------------------
+   * Shows a popup message.
+   * 
+   * @method msgFeatureInfo
+   * @param {String} text - Whe message to show.
+   */
+  msgFeatureInfo: function(text) {
+    let msg;
+    msg = &quot;&lt;h2&gt;Feature Info&lt;/h2&gt;&quot;;
+    Heron.Utils.msgInfo(msg+text);
+  },
+  /**---------------------------------------------------------------------------
+   * Processes the feature info from the Ajax request.
+   * 
+   * @method onFeatureInfo
+   * @param {Object} evt - Event info.
+   */
+  onFeatureInfo: function(evt) {
+    let info;
+    let bcolor;
+    let color;
+
+    console.log(&quot;Heron.controls.SimpleFeatureInfo.onFeatureInfo&quot;);
+    
+    // Get info.
+    info = evt.currentTarget.responseText;
+    
+    // Change header colors.
+    bcolor = &quot;#666&quot;;
+    color = &quot;#fff&quot;;
+    info = info.replace(&quot;background:#eee;&quot;,
+                        &quot;background:&quot;+bcolor+&quot;;color:&quot;+color+&quot;;&quot;);
+
+    // Info panel not already set?
+    if (!isSet(this.infoPanel)) {
+      // No empty info panel id?
+      if (!isEmpty(this.infoPanelId)) {
+        // Get panel.
+        this.infoPanel = Ext.getCmp(this.infoPanelId);
+        // Found?
+        if (isSet(this.infoPanel)) {
+          // Set feature info.
+          this.infoPanel.setInfo(info);
+        } else {
+          // Show popup message.
+          this.msgFeatureInfo(info);
+        }
+      } else {
+        // Show popup message.
+        this.msgFeatureInfo(info);
+      }
+    } else {
+      // Set feature info.
+      this.infoPanel.setInfo(info);
+    }
+  },
+  /**---------------------------------------------------------------------------
+   * Gets the feature info from the first visibel WMS layer in the map
+   * when clicking in the map.
+   * 
+   * @method onMouseClick
+   * @param {Object} evt - Event info.
+   */
+  onMouseClick: function(evt) {
+    let me = this;
+    let resolution;
+    let projection;
+    let layers;
+    let source;
+    let infoFormat;
+    let /** @type {ol.source.ImageWMS} */ infoSource = null;
+    let request;
+    let url;
+    let i,len;
+    console.log(&quot;Heron.controls.SimpleFeatureInfo.onMouseClick&quot;);
+    // Get resolution.
+    resolution = this.map.getView().getResolution();
+    // Get projection.
+    projection = this.map.getView().getProjection();
+    // Get first layer.
+    layers = this.map.getLayerGroup().getLayers().getArray();
+    for (i=0,len=layers.length;i&lt;len;i++) {
+      // Get layer source.
+      source = layers[i].getSource();
+      // Is WMS layer and visible?
+      if ((source instanceof ol.source.ImageWMS) &amp;&amp; 
+          (layers[i].getVisible()===true)) {
+        infoSource = source;
+        break;
+      }
+    }
+    // Valid layer source found?
+    if (infoSource) {
+        // Set info format.
+      infoFormat = &quot;text/html&quot;;
+      // Get GetFeatureInfo url.
+      url = infoSource.getGetFeatureInfoUrl(
+          evt.coordinate,resolution,projection,
+          {&quot;INFO_FORMAT&quot;: infoFormat});
+      // Valid url?
+      if (!isEmpty(url)) {
+        // Get info using Ajax request.
+        request = new XMLHttpRequest();
+        request.open(&quot;GET&quot;,url);
+        request.addEventListener(&quot;load&quot;,function(evt) {
+          me.onFeatureInfo(evt);
+        });
+        request.send(url);
+      }
+    }
+  },
+  /**---------------------------------------------------------------------------
+   * Sets the mouse pointer type when moving the mouse over the map.
+   * 
+   * @method onMouseMove
+   * @param {Object} evt - Event info.
+   */
+  onMouseMove: function(evt) {
+    let coord;
+    let hasHit;
+    // Dragging?
+    if (evt.dragging) {
+      return;
+    }
+    // Get coordinate.
+    coord = this.map.getEventPixel(evt.originalEvent);
+    try {
+      // Check layer features at coordinate position.
+      hasHit = this.map.forEachLayerAtPixel(coord,function() {
+        return true;
+      });
+      // Set the mouse pointer.
+      this.map.getTargetElement().style.cursor = hasHit ? &quot;pointer&quot; : &quot;&quot;;
+    } catch(err) {
+    }
+  }
+});
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+
+<script>
+var onLoad = function() {
+  var css;
+  var head;
+  var style;
+  var stTab;
+  var stTabSelected;
+  var stUl;
+  
+  //console.log("onLoad");
+  
+  css = "";
+  css += "h1, h2, h3, h4, h5, h6 { color: #007ea9; }";
+  css += "a { color: #007ea9; }";
+  //css += "#hd { background: black; }";
+  css += "#hd { background: #005A78; }";
+  css += "#hd div { color: white; }";
+  css += "#hd h1 { color: white; }";
+  
+  css += ".tabs li:nth-child(1) a:nth-child(1) { background: #007ea9 !important; }";
+  css += ".tabs li:nth-child(1) a:nth-child(1) { border-color: #007ea9 !important; }";
+  css += ".tabs li:nth-child(2) a:nth-child(1) { visibility: hidden !important; }";
+  css += ".tabs { border-color: #007ea9 !important; }";
+
+  stTab = "{ background: #f0f1f8 !important; }";
+  stTabSelected = "{ background: #007ea9 !important; border-color: #007ea9 !important; }";
+  stUl = "{ border-color: #007ea9 !important; }";
+
+  css += ".api-class-tab.index.yui3-tab.yui3-widget a "+stTab;
+  css += ".api-class-tab.index.yui3-tab.yui3-widget.yui3-tab-selected a "+stTabSelected;
+  css += ".api-class-tab.methods.yui3-tab.yui3-widget a "+stTab;
+  css += ".api-class-tab.methods.yui3-tab.yui3-widget.yui3-tab-selected a "+stTabSelected;
+  css += ".api-class-tab.properties.yui3-tab.yui3-widget a "+stTab;
+  css += ".api-class-tab.properties.yui3-tab.yui3-widget.yui3-tab-selected a "+stTabSelected;
+  css += "ul.api-class-tabs.yui3-tabview-list "+stUl;
+  css += "#classdocs .item { border-bottom: 1px solid #007ea9; }";
+    
+  head = document.head || document.getElementsByTagName("head")[0];
+  style = document.createElement("style");
+  style.type = "text/css";
+  if (style.styleSheet){
+    style.styleSheet.cssText = css;
+  } else {
+    style.appendChild(document.createTextNode(css));
+  };
+  head.appendChild(style);  
+};
+
+</script>
+</body>
+</html>

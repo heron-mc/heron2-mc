@@ -1,0 +1,2927 @@
+{
+    "project": {},
+    "files": {
+        "src\\base\\Control.js": {
+            "name": "src\\base\\Control.js",
+            "modules": {},
+            "classes": {
+                "Heron.base.Control": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\base\\MapCoordinate.js": {
+            "name": "src\\base\\MapCoordinate.js",
+            "modules": {},
+            "classes": {
+                "Heron.base.MapCoordinate": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\base\\Panel.js": {
+            "name": "src\\base\\Panel.js",
+            "modules": {},
+            "classes": {
+                "Heron.base.Panel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\controls\\MapCoordinateX.js": {
+            "name": "src\\controls\\MapCoordinateX.js",
+            "modules": {},
+            "classes": {
+                "Heron.controls.MapCoordinateX": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\controls\\MapCoordinateY.js": {
+            "name": "src\\controls\\MapCoordinateY.js",
+            "modules": {},
+            "classes": {
+                "Heron.controls.MapCoordinateY": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\controls\\MapProjection.js": {
+            "name": "src\\controls\\MapProjection.js",
+            "modules": {},
+            "classes": {
+                "Heron.controls.MapProjection": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\controls\\SimpleFeatureInfo.js": {
+            "name": "src\\controls\\SimpleFeatureInfo.js",
+            "modules": {},
+            "classes": {
+                "Heron.controls.SimpleFeatureInfo": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\controls\\ZoomPreviousNext.js": {
+            "name": "src\\controls\\ZoomPreviousNext.js",
+            "modules": {},
+            "classes": {
+                "Heron.controls.ZoomPreviousNext": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\debug\\LogMapInfo.js": {
+            "name": "src\\debug\\LogMapInfo.js",
+            "modules": {},
+            "classes": {
+                "Heron.debug.LogMapInfo": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\debug\\Test.js": {
+            "name": "src\\debug\\Test.js",
+            "modules": {},
+            "classes": {
+                "Heron.debug.Test": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\widgets\\HtmlPanel.js": {
+            "name": "src\\widgets\\HtmlPanel.js",
+            "modules": {},
+            "classes": {
+                "Heron.widgets.HtmlPanel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\widgets\\MapBar.js": {
+            "name": "src\\widgets\\MapBar.js",
+            "modules": {},
+            "classes": {
+                "Heron.widgets.MapBar": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\widgets\\MapPanel.js": {
+            "name": "src\\widgets\\MapPanel.js",
+            "modules": {},
+            "classes": {
+                "Heron.widgets.MapPanel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\widgets\\SimpleFeatureInfoPanel.js": {
+            "name": "src\\widgets\\SimpleFeatureInfoPanel.js",
+            "modules": {},
+            "classes": {
+                "Heron.widgets.SimpleFeatureInfoPanel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\widgets\\SimpleLayerTreePanel.js": {
+            "name": "src\\widgets\\SimpleLayerTreePanel.js",
+            "modules": {},
+            "classes": {
+                "Heron.widgets.SimpleLayerTreePanel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\widgets\\ToolButton.js": {
+            "name": "src\\widgets\\ToolButton.js",
+            "modules": {},
+            "classes": {
+                "Heron.widgets.ToolButton": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Application.js": {
+            "name": "src\\Application.js",
+            "modules": {},
+            "classes": {
+                "Heron.Application": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\HeronStart.js": {
+            "name": "src\\HeronStart.js",
+            "modules": {},
+            "classes": {
+                "Ext.application": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\OLUtils.js": {
+            "name": "src\\OLUtils.js",
+            "modules": {},
+            "classes": {
+                "Heron.OLUtils": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Theme.js": {
+            "name": "src\\Theme.js",
+            "modules": {},
+            "classes": {
+                "Heron.Theme": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Utils.js": {
+            "name": "src\\Utils.js",
+            "modules": {
+                "shortcuts": 1,
+                "Number": 1,
+                "String": 1
+            },
+            "classes": {
+                "Heron.Utils": 1
+            },
+            "fors": {
+                "shortcuts": 1,
+                "Number": 1,
+                "String": 1
+            },
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Heron": {
+            "name": "Heron",
+            "submodules": {
+                "shortcuts": 1,
+                "Number": 1,
+                "String": 1
+            },
+            "elements": {},
+            "classes": {
+                "Heron.base.Control": 1,
+                "Heron.base.MapCoordinate": 1,
+                "Heron.base.Panel": 1,
+                "Heron.controls.MapCoordinateX": 1,
+                "Heron.controls.MapCoordinateY": 1,
+                "Heron.controls.MapProjection": 1,
+                "Heron.controls.SimpleFeatureInfo": 1,
+                "Heron.controls.ZoomPreviousNext": 1,
+                "Heron.debug.LogMapInfo": 1,
+                "Heron.debug.Test": 1,
+                "Heron.widgets.HtmlPanel": 1,
+                "Heron.widgets.MapBar": 1,
+                "Heron.widgets.MapPanel": 1,
+                "Heron.widgets.SimpleFeatureInfoPanel": 1,
+                "Heron.widgets.SimpleLayerTreePanel": 1,
+                "Heron.widgets.ToolButton": 1,
+                "Heron.Application": 1,
+                "Ext.application": 1,
+                "Heron.OLUtils": 1,
+                "Heron.Theme": 1,
+                "Heron.Utils": 1,
+                "shortcuts": 1,
+                "Number": 1,
+                "String": 1
+            },
+            "fors": {
+                "shortcuts": 1,
+                "Number": 1,
+                "String": 1
+            },
+            "namespaces": {},
+            "file": "src\\Utils.js",
+            "line": 5
+        },
+        "shortcuts": {
+            "name": "shortcuts",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "Heron.Utils": 1
+            },
+            "fors": {
+                "shortcuts": 1
+            },
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "Heron",
+            "namespace": "",
+            "file": "src\\Utils.js",
+            "line": 5,
+            "description": "Heron shortcuts."
+        },
+        "Number": {
+            "name": "Number",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "shortcuts": 1
+            },
+            "fors": {
+                "Number": 1
+            },
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "Heron",
+            "namespace": "",
+            "file": "src\\Utils.js",
+            "line": 508,
+            "description": "Number prototypes."
+        },
+        "String": {
+            "name": "String",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "Number": 1,
+                "String": 1
+            },
+            "fors": {
+                "String": 1
+            },
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "Heron",
+            "namespace": "",
+            "file": "src\\Utils.js",
+            "line": 563,
+            "description": "String prototypes."
+        }
+    },
+    "classes": {
+        "Heron.base.Control": {
+            "name": "Heron.base.Control",
+            "shortname": "Heron.base.Control",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\base\\Control.js",
+            "line": 5,
+            "description": "The base class for controls (i.e. a toolbar or statusbar item).",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.base.MapCoordinate": {
+            "name": "Heron.base.MapCoordinate",
+            "shortname": "Heron.base.MapCoordinate",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\base\\MapCoordinate.js",
+            "line": 4,
+            "description": "The base class for the MapCoordinateX and MapCoordinateY controls.",
+            "extends": "Heron.base.Control",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.\n- For example:<br>\n    config.map<br>\n    config.format<br>\n    config.xy_precision<br>\n    config.options<br>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.base.Panel": {
+            "name": "Heron.base.Panel",
+            "shortname": "Heron.base.Panel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\base\\Panel.js",
+            "line": 5,
+            "description": "The base class for panels.",
+            "extends": "Ext.panel.Panel",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.controls.MapCoordinateX": {
+            "name": "Heron.controls.MapCoordinateX",
+            "shortname": "Heron.controls.MapCoordinateX",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\controls\\MapCoordinateX.js",
+            "line": 4,
+            "description": "Shows the x coordinate (in the statusbar).\n<br><small><i>type: \"xcoord\"</i></small>",
+            "extends": "Heron.controls.MapCoordinate",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.\n- For example:<br>\n    config.map<br>\n    config.format<br>\n    config.xy_precision<br>\n    config.options<br>\n    config.options.MapCoordinateX.*<br>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.controls.MapCoordinateY": {
+            "name": "Heron.controls.MapCoordinateY",
+            "shortname": "Heron.controls.MapCoordinateY",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\controls\\MapCoordinateY.js",
+            "line": 4,
+            "description": "Shows the y coordinate (in the statusbar).\n<br><small><i>type: \"ycoord\"</i></small>",
+            "extends": "Heron.controls.MapCoordinate",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.\n- For example:<br>\n    config.map<br>\n    config.format<br>\n    config.xy_precision<br>\n    config.options<br>\n    config.options.MapCoordinateY.*<br>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.controls.MapProjection": {
+            "name": "Heron.controls.MapProjection",
+            "shortname": "Heron.controls.MapProjection",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\controls\\MapProjection.js",
+            "line": 4,
+            "description": "Show the projection EPSG code (in the statusbar).\n<br><small><i>type: \"epsgpanel\"</i></small>",
+            "extends": "Heron.base.Control",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.\n- For example:<br>\n    config.map<br>\n    config.format<br>\n    config.options<br>\n    config.options.MapProjection.*<br>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.controls.SimpleFeatureInfo": {
+            "name": "Heron.controls.SimpleFeatureInfo",
+            "shortname": "Heron.controls.SimpleFeatureInfo",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\controls\\SimpleFeatureInfo.js",
+            "line": 4,
+            "description": "Gets the feature info from the first visibel WMS layer in the map\nwhen clicking in the map and shows it in a panel.\nWhen no panel is specified a the info is shown in a sliding popup.\n<br><small><i>type: \"simplefeatureinfo\"</i></small>",
+            "extends": "Heron.base.Control",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.\n- For example:<br>\n    config.map<br>\n    config.infoPanelId<br>\n    config.options<br>\n    config.options.SimpleFeatureInfo.*<br>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.controls.ZoomPreviousNext": {
+            "name": "Heron.controls.ZoomPreviousNext",
+            "shortname": "Heron.controls.ZoomPreviousNext",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 4,
+            "description": "This control saves the zoom history and has methods to go to previous and\nnext zoom extent. These methods can be called from a Previous and Next\nbutton.\n<br><small><i>type: \"zoomprevious\"</i></small>\n<br><small><i>type: \"zoomnext\"</i></small>",
+            "extends": "Heron.base.control",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.\n- For example:<br>\n    config.map<br>\n    config.zoomDuration<br>\n    config.options<br>\n    config.options.ZoomPreviousNext.*<br>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.debug.LogMapInfo": {
+            "name": "Heron.debug.LogMapInfo",
+            "shortname": "Heron.debug.LogMapInfo",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\debug\\LogMapInfo.js",
+            "line": 4,
+            "description": "Logs some map info after the map extents is changed.\n\nRemarks: - Even logs the info when Heron.DEBUG is false.",
+            "is_constructor": 1
+        },
+        "Heron.debug.Test": {
+            "name": "Heron.debug.Test",
+            "shortname": "Heron.debug.Test",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\debug\\Test.js",
+            "line": 4,
+            "description": "For testing.\n<br><i>singleton</i>",
+            "is_constructor": 1
+        },
+        "Heron.widgets.HtmlPanel": {
+            "name": "Heron.widgets.HtmlPanel",
+            "shortname": "Heron.widgets.HtmlPanel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\widgets\\HtmlPanel.js",
+            "line": 4,
+            "description": "A panel to show (html) text or content.\n<br><small><i>xtype: \"hr_HtmlPanel\"</i></small>\n\nRemarks: - To show a vertical scrollbar in the panel use 'scrollable: true;'\n           in the config.",
+            "extends": "Heron.base.Panel",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.<br>\n- For example:<br>\n    config.map<br>\n    config.html<br>\n    config.url<br>\n    config.options                            (merged)<br>\n    config.options.HtmlPanel.*                (merged)<br>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.widgets.MapBar": {
+            "name": "Heron.widgets.MapBar",
+            "shortname": "Heron.widgets.MapBar",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\widgets\\MapBar.js",
+            "line": 5,
+            "description": "Class for building a toolbar of statusbar.\n<br><i>singleton</i>\n\nRemarks: - Config settings (Heron.options.map.*) are parsed here to the\n           various components and controls.",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.widgets.MapPanel": {
+            "name": "Heron.widgets.MapPanel",
+            "shortname": "Heron.widgets.MapPanel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\widgets\\MapPanel.js",
+            "line": 4,
+            "description": "A panel to show the map.\n<br><small><i>xtype: \"hr_MapPanel\"</i></small>",
+            "extends": "Heron.base.Panel",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.<br>\n- For example:<br>\n    config.map<br>\n    config.options                            (merged)<br>\n    config.options.map                        (merged)<br>\n    config.options.map.layers                 (merged)<br>\n    config.options.map.settings               (merged)<br>\n    config.options.map.settings.center        (merged)<br>\n    config.options.map.settings.zoom          (merged)<br>\n    config.options.map.settings.zoomExtent    (merged)<br>\n    config.options.statusbar                  (merged)<br>\n    config.options.toolbar                    (merged)<br>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.widgets.SimpleFeatureInfoPanel": {
+            "name": "Heron.widgets.SimpleFeatureInfoPanel",
+            "shortname": "Heron.widgets.SimpleFeatureInfoPanel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\widgets\\SimpleFeatureInfoPanel.js",
+            "line": 4,
+            "description": "A panel to show the info from the SimpleFeatureInfo control.\n<br><small><i>xtype: \"hr_SimpleFeatureInfoPanel\"</i></small>",
+            "extends": "Heron.base.Panel",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.<br>\n- For example:<br>\n    config.map<br>\n    config.options                            (merged)<br>\n    config.options.SimpleFeatureInfoPanel.*   (merged)<br>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.widgets.SimpleLayerTreePanel": {
+            "name": "Heron.widgets.SimpleLayerTreePanel",
+            "shortname": "Heron.widgets.SimpleLayerTreePanel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\widgets\\SimpleLayerTreePanel.js",
+            "line": 4,
+            "description": "A panel with a simple layertree.\n<br><small><i>xtype: \"hr_SimpleLayerTreePanel\"</i></small>",
+            "extends": "Ext.tree.Panel",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.widgets.ToolButton": {
+            "name": "Heron.widgets.ToolButton",
+            "shortname": "Heron.widgets.ToolButton",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\widgets\\ToolButton.js",
+            "line": 7,
+            "description": "A button which is shown in on the toolbar.",
+            "extends": "Ext.button.Button",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Heron.Application": {
+            "name": "Heron.Application",
+            "shortname": "Heron.Application",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\Application.js",
+            "line": 4,
+            "description": "The Heron Application.",
+            "extends": "Ext.Component"
+        },
+        "Ext.application": {
+            "name": "Ext.application",
+            "shortname": "Ext.application",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\HeronStart.js",
+            "line": 19,
+            "description": "Main application (HeronStart)."
+        },
+        "Heron.OLUtils": {
+            "name": "Heron.OLUtils",
+            "shortname": "Heron.OLUtils",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\OLUtils.js",
+            "line": 4,
+            "description": "OpenLayers utilities.\n<br><i>singleton</i>"
+        },
+        "Heron.Theme": {
+            "name": "Heron.Theme",
+            "shortname": "Heron.Theme",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\Theme.js",
+            "line": 3,
+            "description": "Theme utilities.\n<br><i>singleton</i>"
+        },
+        "Heron.Utils": {
+            "name": "Heron.Utils",
+            "shortname": "Heron.Utils",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "file": "src\\Utils.js",
+            "line": 5,
+            "description": "General utilities.\n<br><i>singleton</i>",
+            "submodule": "shortcuts"
+        },
+        "shortcuts": {
+            "name": "shortcuts",
+            "shortname": "shortcuts",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "submodule": "Number",
+            "namespace": ""
+        },
+        "Number": {
+            "name": "Number",
+            "shortname": "Number",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "submodule": "String",
+            "namespace": ""
+        },
+        "String": {
+            "name": "String",
+            "shortname": "String",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Heron",
+            "submodule": "String",
+            "namespace": ""
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "src\\base\\Control.js",
+            "line": 16,
+            "description": "The class name of the control.",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 22,
+            "description": "The binded ui component. Can be null.",
+            "itemtype": "property",
+            "name": "component",
+            "type": "Ext.Component",
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 28,
+            "description": "True if the control is active.",
+            "itemtype": "property",
+            "name": "isActive",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 35,
+            "description": "The map. Can be null.\nIs only present after the whole application layout is rendered i.e.\nwhen the onAfterRender event is fired.",
+            "itemtype": "property",
+            "name": "map",
+            "type": "ol.Map",
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 43,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 58,
+            "description": "Binds this control to an ExtJS component i.e. for example an\nExt.toolbar.TextItem, and updates the code.",
+            "itemtype": "method",
+            "name": "bind",
+            "params": [
+                {
+                    "name": "cmp",
+                    "description": "- The ui component.",
+                    "type": "Ext.Component"
+                },
+                {
+                    "name": "update",
+                    "description": "- When True updates the ui component.\n- Default: true",
+                    "type": "Boolean",
+                    "optional": true
+                }
+            ],
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 76,
+            "description": "Checks the control config. Merges the default config with the user\nconfig. Returns the merged config.",
+            "itemtype": "method",
+            "name": "checkConfig",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.\n- For example:<br>\n    config.map<br>\n    config.options<br>",
+                    "type": "Object"
+                },
+                {
+                    "name": "needMap",
+                    "description": "- When True checks if the map is set in the\nconfiguration.\n- Default: false",
+                    "type": "Boolean",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 135,
+            "description": "Formats the text.\nThis method can be overridden in the user config.",
+            "itemtype": "method",
+            "name": "format",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "- The text to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 145,
+            "description": "Returns True when the control is active else returns False.",
+            "itemtype": "method",
+            "name": "getActive",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 154,
+            "description": "Activates or deactivates the control.",
+            "itemtype": "method",
+            "name": "setActive",
+            "params": [
+                {
+                    "name": "flag",
+                    "description": "- When True activates the control else deactivates\nthe control.",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 179,
+            "description": "Installs or deinstalls the event handler(s).\nCan be overridden in subclasses.",
+            "example": [
+                "\n  if (flag===true) {<br>\n    this.map.on(\"singleclick\",this.onMouseClick,this);<br>\n  } else {<br>\n    this.map.un(\"singleclick\",this.onMouseClick,this);<br>\n  };"
+            ],
+            "itemtype": "method",
+            "name": "setEventHandlers",
+            "params": [
+                {
+                    "name": "flag",
+                    "description": "- When True installs the event handlers else\ndeinstalls them.",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\Control.js",
+            "line": 196,
+            "description": "Updates the ui component. Is called in method <b>bind</b>.\nCan be overridden in subclasses.",
+            "itemtype": "method",
+            "name": "updateComponent",
+            "class": "Heron.base.Control"
+        },
+        {
+            "file": "src\\base\\MapCoordinate.js",
+            "line": 23,
+            "description": "The x or y coordinate to show.",
+            "itemtype": "property",
+            "name": "xy_precision",
+            "type": "Number",
+            "class": "Heron.base.MapCoordinate"
+        },
+        {
+            "file": "src\\base\\MapCoordinate.js",
+            "line": 29,
+            "description": "The precision for the x- and y-coordinate.",
+            "itemtype": "property",
+            "name": "xy_precision",
+            "type": "Number",
+            "class": "Heron.base.MapCoordinate"
+        },
+        {
+            "file": "src\\base\\MapCoordinate.js",
+            "line": 35,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.base.MapCoordinate"
+        },
+        {
+            "file": "src\\base\\MapCoordinate.js",
+            "line": 57,
+            "description": "Formats the coordinate text.\nThis method can be overridden in the user config.",
+            "itemtype": "method",
+            "name": "format",
+            "params": [
+                {
+                    "name": "coord",
+                    "description": "- The coordinate to show.",
+                    "type": "Number"
+                },
+                {
+                    "name": "precision",
+                    "description": "- The precision with which the coordinate is shown.",
+                    "type": "Number"
+                }
+            ],
+            "class": "Heron.base.MapCoordinate"
+        },
+        {
+            "file": "src\\base\\MapCoordinate.js",
+            "line": 68,
+            "description": "Extracts the x or y coordinate from the event info.\nThis method can be overridden in the user config.",
+            "itemtype": "method",
+            "name": "getCoordinate",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Heron.base.MapCoordinate"
+        },
+        {
+            "file": "src\\base\\MapCoordinate.js",
+            "line": 79,
+            "description": "Updates the x or y coordinate when moving the mouse over the map.",
+            "itemtype": "method",
+            "name": "onMouseMove",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.base.MapCoordinate"
+        },
+        {
+            "file": "src\\base\\MapCoordinate.js",
+            "line": 90,
+            "description": "Installs the onMouseMove event handler.",
+            "itemtype": "method",
+            "name": "setEventHandlers",
+            "class": "Heron.base.MapCoordinate"
+        },
+        {
+            "file": "src\\base\\MapCoordinate.js",
+            "line": 111,
+            "description": "Updates the coordinate text. Uses the <b>format</b> method to format\nthe text.",
+            "itemtype": "method",
+            "name": "updateComponent",
+            "class": "Heron.base.MapCoordinate"
+        },
+        {
+            "file": "src\\base\\Panel.js",
+            "line": 19,
+            "description": "The class name of the control.",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "class": "Heron.base.Panel"
+        },
+        {
+            "file": "src\\base\\Panel.js",
+            "line": 25,
+            "description": "The map. Can be null.\nIs only present after the whole application layout is rendered i.e.\nwhen the onAfterRender event is fired.",
+            "itemtype": "property",
+            "name": "map",
+            "type": "ol.Map",
+            "class": "Heron.base.Panel"
+        },
+        {
+            "file": "src\\base\\Panel.js",
+            "line": 33,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.base.Panel"
+        },
+        {
+            "file": "src\\base\\Panel.js",
+            "line": 55,
+            "description": "Checks the panel config. Merges the default config with the user\nconfig. Returns the merged config.",
+            "itemtype": "method",
+            "name": "checkConfig",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.<br>",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Heron.base.Panel"
+        },
+        {
+            "file": "src\\base\\Panel.js",
+            "line": 105,
+            "description": "This event handler sets the map when the layout is rendered (and the map\ncreated).",
+            "itemtype": "method",
+            "name": "onAfterLayout",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.base.Panel"
+        },
+        {
+            "file": "src\\base\\Panel.js",
+            "line": 117,
+            "description": "This event handler is called after the panel is rendered.",
+            "itemtype": "method",
+            "name": "onAfterRender",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.base.Panel"
+        },
+        {
+            "file": "src\\controls\\MapCoordinateX.js",
+            "line": 25,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.controls.MapCoordinateX"
+        },
+        {
+            "file": "src\\controls\\MapCoordinateX.js",
+            "line": 34,
+            "description": "Formats the x coordinate text.",
+            "itemtype": "method",
+            "name": "format",
+            "params": [
+                {
+                    "name": "coord",
+                    "description": "- The coordinate to show.",
+                    "type": "Number"
+                },
+                {
+                    "name": "precision",
+                    "description": "- The precision with which the coordinate is shown.",
+                    "type": "Number"
+                }
+            ],
+            "class": "Heron.controls.MapCoordinateX"
+        },
+        {
+            "file": "src\\controls\\MapCoordinateX.js",
+            "line": 44,
+            "description": "Extracts the x coordinate from the event info.",
+            "itemtype": "method",
+            "name": "getCoordinate",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Heron.controls.MapCoordinateX"
+        },
+        {
+            "file": "src\\controls\\MapCoordinateY.js",
+            "line": 25,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.controls.MapCoordinateY"
+        },
+        {
+            "file": "src\\controls\\MapCoordinateY.js",
+            "line": 34,
+            "description": "Formats the y coordinate text.",
+            "itemtype": "method",
+            "name": "format",
+            "params": [
+                {
+                    "name": "coord",
+                    "description": "- The coordinate to show.",
+                    "type": "Number"
+                },
+                {
+                    "name": "precision",
+                    "description": "- The precision with which the coordinate is shown.",
+                    "type": "Number"
+                }
+            ],
+            "class": "Heron.controls.MapCoordinateY"
+        },
+        {
+            "file": "src\\controls\\MapCoordinateY.js",
+            "line": 44,
+            "description": "Extracts the y coordinate from the event info.",
+            "itemtype": "method",
+            "name": "getCoordinate",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Heron.controls.MapCoordinateY"
+        },
+        {
+            "file": "src\\controls\\MapProjection.js",
+            "line": 24,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.controls.MapProjection"
+        },
+        {
+            "file": "src\\controls\\MapProjection.js",
+            "line": 43,
+            "description": "Gets the projection code and shows it.",
+            "itemtype": "method",
+            "name": "updateComponent",
+            "class": "Heron.controls.MapProjection"
+        },
+        {
+            "file": "src\\controls\\SimpleFeatureInfo.js",
+            "line": 26,
+            "description": "The info panel which shows the info.",
+            "itemtype": "property",
+            "name": "infoPanel",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.controls.SimpleFeatureInfo"
+        },
+        {
+            "file": "src\\controls\\SimpleFeatureInfo.js",
+            "line": 33,
+            "description": "The id of the info panel which shows the info.",
+            "itemtype": "property",
+            "name": "infoPanelId",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.controls.SimpleFeatureInfo"
+        },
+        {
+            "file": "src\\controls\\SimpleFeatureInfo.js",
+            "line": 40,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.controls.SimpleFeatureInfo"
+        },
+        {
+            "file": "src\\controls\\SimpleFeatureInfo.js",
+            "line": 59,
+            "description": "Installs or deinstalls the event handlers.",
+            "itemtype": "method",
+            "name": "setEventHandlers",
+            "params": [
+                {
+                    "name": "flag",
+                    "description": "- When True installs the event handlers else\ndeinstalls them.",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Heron.controls.SimpleFeatureInfo"
+        },
+        {
+            "file": "src\\controls\\SimpleFeatureInfo.js",
+            "line": 78,
+            "description": "Shows a popup message.",
+            "itemtype": "method",
+            "name": "msgFeatureInfo",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "- Whe message to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.controls.SimpleFeatureInfo"
+        },
+        {
+            "file": "src\\controls\\SimpleFeatureInfo.js",
+            "line": 89,
+            "description": "Processes the feature info from the Ajax request.",
+            "itemtype": "method",
+            "name": "onFeatureInfo",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.controls.SimpleFeatureInfo"
+        },
+        {
+            "file": "src\\controls\\SimpleFeatureInfo.js",
+            "line": 134,
+            "description": "Gets the feature info from the first visibel WMS layer in the map\nwhen clicking in the map.",
+            "itemtype": "method",
+            "name": "onMouseClick",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.controls.SimpleFeatureInfo"
+        },
+        {
+            "file": "src\\controls\\SimpleFeatureInfo.js",
+            "line": 189,
+            "description": "Sets the mouse pointer type when moving the mouse over the map.",
+            "itemtype": "method",
+            "name": "onMouseMove",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.controls.SimpleFeatureInfo"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 27,
+            "description": "The binded Next button.",
+            "itemtype": "property",
+            "name": "buttonNext",
+            "type": "Heron.widgets.ToolButton",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 34,
+            "description": "The binded Previous button.",
+            "itemtype": "property",
+            "name": "buttonPrevious",
+            "type": "Heron.widgets.ToolButton",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 41,
+            "description": "The saved zoom extents.",
+            "itemtype": "property",
+            "name": "extents",
+            "type": "Array<ol.Extent>",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 48,
+            "description": "The current zoom state index.\nAfter startup this should be 0.",
+            "itemtype": "property",
+            "name": "currIndex",
+            "type": "Number",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 56,
+            "description": "When True the OnMoveEnd event handler doesn't record the map extent.\nUsed when the <b>previous</b> and <b>next</b> methods are called.",
+            "itemtype": "property",
+            "name": "disableEvent",
+            "type": "Boolean",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 64,
+            "description": "The duration (in msec.) of the zoom animation.",
+            "itemtype": "property",
+            "name": "zoomDuration",
+            "type": "Number",
+            "default": "250",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 72,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 102,
+            "description": "Event handler that saves the map extent after the map is zoomed or panned.",
+            "itemtype": "method",
+            "name": "onMouseEnd",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 132,
+            "description": "Zoom to next extent.",
+            "itemtype": "method",
+            "name": "next",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 147,
+            "description": "Zoom to previous extent.",
+            "itemtype": "method",
+            "name": "previous",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 162,
+            "description": "Overrides the base setActive() method.\nThis control is always active, i.e. always capturing the map's \nMoveEnd event.",
+            "itemtype": "method",
+            "name": "setActive",
+            "params": [
+                {
+                    "name": "flag",
+                    "description": "- When True activates the control else deactivates\nthe control.",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 173,
+            "description": "Sets the Next button.",
+            "itemtype": "method",
+            "name": "setButtonNext",
+            "params": [
+                {
+                    "name": "button",
+                    "description": "",
+                    "type": "Heron.widgets.ToolButton"
+                }
+            ],
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 183,
+            "description": "Sets the Previous button.",
+            "itemtype": "method",
+            "name": "setButtonPrevious",
+            "params": [
+                {
+                    "name": "button",
+                    "description": "",
+                    "type": "Heron.widgets.ToolButton"
+                }
+            ],
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 193,
+            "description": "Installs or deinstalls the <b>onMoveEnd</b> event handler.",
+            "itemtype": "method",
+            "name": "setEventHandlers",
+            "params": [
+                {
+                    "name": "flag",
+                    "description": "- When True installs the event handler else\ndeinstall it.",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 210,
+            "description": "Enables/disables the Previous and Next buttons when there are zoom extents\nor not.",
+            "itemtype": "method",
+            "name": "updateButtons",
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\controls\\ZoomPreviousNext.js",
+            "line": 233,
+            "description": "Zoom to extent.",
+            "itemtype": "method",
+            "name": "zoomToExtent",
+            "params": [
+                {
+                    "name": "map",
+                    "description": "- The map.",
+                    "type": "ol.Map"
+                },
+                {
+                    "name": "extent",
+                    "description": "- The zoom extent.",
+                    "type": "ol.Extent"
+                }
+            ],
+            "class": "Heron.controls.ZoomPreviousNext"
+        },
+        {
+            "file": "src\\debug\\LogMapInfo.js",
+            "line": 15,
+            "description": "The map. Can be null.",
+            "itemtype": "property",
+            "name": "map",
+            "type": "ol.Map",
+            "class": "Heron.debug.LogMapInfo"
+        },
+        {
+            "file": "src\\debug\\LogMapInfo.js",
+            "line": 21,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.debug.LogMapInfo"
+        },
+        {
+            "file": "src\\debug\\LogMapInfo.js",
+            "line": 45,
+            "description": "Event handler that shows the current zoomlevel and resolution after\nthe map is zoomed or panned.",
+            "itemtype": "method",
+            "name": "onMouseEnd",
+            "class": "Heron.debug.LogMapInfo"
+        },
+        {
+            "file": "src\\debug\\Test.js",
+            "line": 15,
+            "description": "Initializes the test environment. Install a test button in the toolbar.",
+            "itemtype": "method",
+            "name": "init",
+            "class": "Heron.debug.Test"
+        },
+        {
+            "file": "src\\debug\\Test.js",
+            "line": 40,
+            "description": "Main test method.",
+            "itemtype": "method",
+            "name": "test",
+            "class": "Heron.debug.Test"
+        },
+        {
+            "file": "src\\debug\\Test.js",
+            "line": 49,
+            "itemtype": "method",
+            "name": "test_ConsoleLog",
+            "class": "Heron.debug.Test"
+        },
+        {
+            "file": "src\\widgets\\HtmlPanel.js",
+            "line": 30,
+            "description": "The (html) text to show.",
+            "itemtype": "property",
+            "name": "html",
+            "type": "String",
+            "class": "Heron.widgets.HtmlPanel"
+        },
+        {
+            "file": "src\\widgets\\HtmlPanel.js",
+            "line": 36,
+            "description": "The html template string used when loading content from an url.\n\nWhen loading content from an url this property can be used to specify\nan html template to format/layout the loaded content. The template\nstring must contain the tag '{content}'. This tag will be replaced with\nthe content of the loaded file.",
+            "itemtype": "property",
+            "name": "htmlTemplate",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.HtmlPanel"
+        },
+        {
+            "file": "src\\widgets\\HtmlPanel.js",
+            "line": 48,
+            "description": "The load mask showed when loading content from an url.",
+            "itemtype": "property",
+            "name": "loadMask",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.HtmlPanel"
+        },
+        {
+            "file": "src\\widgets\\HtmlPanel.js",
+            "line": 55,
+            "description": "The url used to load content from an url.",
+            "itemtype": "property",
+            "name": "url",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.HtmlPanel"
+        },
+        {
+            "file": "src\\widgets\\HtmlPanel.js",
+            "line": 62,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.HtmlPanel"
+        },
+        {
+            "file": "src\\widgets\\HtmlPanel.js",
+            "line": 105,
+            "description": "This event handler is called after the panel is rendered.\nIs shows an load mask when loading content from an url.",
+            "itemtype": "method",
+            "name": "onAfterRender",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.HtmlPanel"
+        },
+        {
+            "file": "src\\widgets\\HtmlPanel.js",
+            "line": 129,
+            "description": "Uses the default or user specified html template. The tag '{content}' in\nthis template will be replaced with the content of the loaded file.",
+            "itemtype": "method",
+            "name": "loadUrl",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "- The url used to load content from an url.",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.HtmlPanel"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 25,
+            "description": "The main map panel.",
+            "itemtype": "property",
+            "name": "mapPanel",
+            "type": "Heron.widgets.MapPanel",
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 31,
+            "description": "The item definitions..",
+            "itemtype": "property",
+            "name": "itemDefs",
+            "type": "Array<Object>",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 38,
+            "description": "The ZoomPreviousNextControl.",
+            "itemtype": "property",
+            "name": "zoomPreviousNextControl",
+            "type": "Heron.controls.ZoomPreviousNext",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 45,
+            "itemtype": "method",
+            "name": "constructor",
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 51,
+            "description": "Builds the toolbar or statusbar.\nSupports also the \"-\", \"->\" and \" \" special tokens.",
+            "itemtype": "method",
+            "name": "build",
+            "params": [
+                {
+                    "name": "mapPanel",
+                    "description": "- The map panel.",
+                    "type": "Heron.widgets.MapPanel"
+                },
+                {
+                    "name": "mapOptions",
+                    "description": "- The map config (i.e. Heron.options.map).<br>\n- For example:<br>\n    mapOptions (i.e. Heron.options.map)<br>\n    mapOptions.settings<br>\n    mapOptions.MapCoordinates<br>",
+                    "type": "Object"
+                },
+                {
+                    "name": "barOptions",
+                    "description": "- The config for the toolbar or statusbar. \n- For example:<br>\n    barOptions (i.e. Heron.options.map.toolbar or Heron.options.map.statusbar)<br>\n    barOptions.type<br>\n    barOptions.dockPosition<br>\n    barOptions.items<br>\n    barOptions.item.margin<br>\n    barOptions.toggleGroup<br>",
+                    "type": "Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 283,
+            "description": "Builds the statusbar.",
+            "itemtype": "method",
+            "name": "buildStatusbar",
+            "params": [
+                {
+                    "name": "mapPanel",
+                    "description": "- The map panel.",
+                    "type": "Heron.widgets.MapPanel"
+                },
+                {
+                    "name": "options",
+                    "description": "- The config for the statusbar.<br>\n- For example:<br>\n    options (i.e. Heron.options.map)<br>\n    options.statusbar<br>\n    options.MapCoordinateX<br>\n    options.MapCoordinateY<br>",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 313,
+            "description": "Builds the toolbar.",
+            "itemtype": "method",
+            "name": "buildToolbar",
+            "params": [
+                {
+                    "name": "mapPanel",
+                    "description": "- The map panel.",
+                    "type": "Heron.widgets.MapPanel"
+                },
+                {
+                    "name": "options",
+                    "description": "- The config for the toolbar.<br>\n- For example:<br>\n    options (i.e. Heron.options.map)<br>\n    options.toolbar<br>\n    options.Pan<br>\n    options.ZoomIn<br>",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 343,
+            "description": "Creates a toolbar button.",
+            "itemtype": "method",
+            "name": "buildToolbar",
+            "params": [
+                {
+                    "name": "mapPanel",
+                    "description": "- The map panel.",
+                    "type": "Heron.widgets.MapPanel"
+                },
+                {
+                    "name": "options",
+                    "description": "- The config for the toolbar.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Heron.widgets.ToolButton"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 356,
+            "description": "Initializes the predefined bar item definitions.\nReturns True on success else False.",
+            "itemtype": "method",
+            "name": "initItemDefinitions",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "- The config for the items. \n- For example:<br>\n    options (i.e. Heron.options.map)<br>\n    options.Pan<br>\n    options.ZoomIn<br>\n    options.statusbar<br>\n    options.MapCoordinateX<br>\n    options.MapCoordinateY<br>",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapBar.js",
+            "line": 590,
+            "description": "Adds or replaces a toolbar or statusbar item.",
+            "itemtype": "method",
+            "name": "setItemDef",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "- The item type.",
+                    "type": "*"
+                },
+                {
+                    "name": "createFunction",
+                    "description": "- The \"create\" function.",
+                    "type": "Function"
+                },
+                {
+                    "name": "defaultOptions",
+                    "description": "- The default config.",
+                    "type": "Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapBar"
+        },
+        {
+            "file": "src\\widgets\\MapPanel.js",
+            "line": 33,
+            "description": "The map center used at startup.",
+            "itemtype": "property",
+            "name": "center",
+            "type": "ol.Coordinate",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapPanel"
+        },
+        {
+            "file": "src\\widgets\\MapPanel.js",
+            "line": 40,
+            "description": "The zoom level used at startup.",
+            "itemtype": "property",
+            "name": "zoom",
+            "type": "Number",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapPanel"
+        },
+        {
+            "file": "src\\widgets\\MapPanel.js",
+            "line": 47,
+            "description": "The LogMapInfo control.",
+            "itemtype": "property",
+            "name": "logMapInfoControl",
+            "type": "LogMapInfo",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapPanel"
+        },
+        {
+            "file": "src\\widgets\\MapPanel.js",
+            "line": 54,
+            "description": "Is True when using a map context.",
+            "itemtype": "property",
+            "name": "useMapContext",
+            "type": "Boolean",
+            "default": "false",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.widgets.MapPanel"
+        },
+        {
+            "file": "src\\widgets\\MapPanel.js",
+            "line": 62,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.MapPanel"
+        },
+        {
+            "file": "src\\widgets\\MapPanel.js",
+            "line": 169,
+            "description": "Creates the map.",
+            "itemtype": "method",
+            "name": "createMap",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "- The map configuration.<br>\n- For example:<br>\n    config.controls<br>\n    config.interactions<br>\n    config.layers<br>\n    config.settings<br>",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.MapPanel"
+        },
+        {
+            "file": "src\\widgets\\MapPanel.js",
+            "line": 224,
+            "description": "Zoom to default center/zoom.",
+            "itemtype": "method",
+            "name": "zoomToDefault",
+            "class": "Heron.widgets.MapPanel"
+        },
+        {
+            "file": "src\\widgets\\SimpleFeatureInfoPanel.js",
+            "line": 25,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.SimpleFeatureInfoPanel"
+        },
+        {
+            "file": "src\\widgets\\SimpleFeatureInfoPanel.js",
+            "line": 41,
+            "description": "Shows the text fetched by the SimpleFeatureInfo control.",
+            "itemtype": "method",
+            "name": "setInfo",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "- The text to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.widgets.SimpleFeatureInfoPanel"
+        },
+        {
+            "file": "src\\widgets\\SimpleLayerTreePanel.js",
+            "line": 21,
+            "description": "The map. Can be null.\nIs only present after the whole application layout is rendered i.e.\nwhen the onAfterRender event is fired.",
+            "itemtype": "property",
+            "name": "map",
+            "type": "ol.Map",
+            "class": "Heron.widgets.SimpleLayerTreePanel"
+        },
+        {
+            "file": "src\\widgets\\SimpleLayerTreePanel.js",
+            "line": 29,
+            "description": "The layertree store.",
+            "itemtype": "property",
+            "name": "store",
+            "type": "GeoExt.data.store.LayersTree",
+            "class": "Heron.widgets.SimpleLayerTreePanel"
+        },
+        {
+            "file": "src\\widgets\\SimpleLayerTreePanel.js",
+            "line": 35,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.SimpleLayerTreePanel"
+        },
+        {
+            "file": "src\\widgets\\SimpleLayerTreePanel.js",
+            "line": 75,
+            "description": "This event handler sets the map when the layout is rendered (and the map\ncreated). Gets the layers from the map and fills the layertree store.",
+            "itemtype": "method",
+            "name": "onAfterLayout",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "- Event info.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.SimpleLayerTreePanel"
+        },
+        {
+            "file": "src\\widgets\\ToolButton.js",
+            "line": 18,
+            "description": "The binded control or interaction. Can be null.",
+            "itemtype": "property",
+            "name": "control",
+            "type": "Heron.base.Control|ol.interaction.Interaction",
+            "class": "Heron.widgets.ToolButton"
+        },
+        {
+            "file": "src\\widgets\\ToolButton.js",
+            "line": 24,
+            "description": "The map. Can be null.",
+            "itemtype": "property",
+            "name": "map",
+            "type": "ol.Map",
+            "class": "Heron.widgets.ToolButton"
+        },
+        {
+            "file": "src\\widgets\\ToolButton.js",
+            "line": 30,
+            "itemtype": "method",
+            "name": "constructor",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.widgets.ToolButton"
+        },
+        {
+            "file": "src\\widgets\\ToolButton.js",
+            "line": 63,
+            "description": "This event handler is called when the button is pressed or depressed.\nAlso called when in togglegroup when deactivated.",
+            "itemtype": "method",
+            "name": "onToggle",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "- The button which was toggled.",
+                    "type": "Heron.widget.ToolButton"
+                },
+                {
+                    "name": "pressed",
+                    "description": "- True when pressed else False. .",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Heron.widgets.ToolButton"
+        },
+        {
+            "file": "src\\Application.js",
+            "line": 22,
+            "description": "The map context.",
+            "itemtype": "property",
+            "name": "mapContext",
+            "type": "Undefined",
+            "default": "null",
+            "class": "Heron.Application"
+        },
+        {
+            "file": "src\\Application.js",
+            "line": 29,
+            "description": "The map.",
+            "itemtype": "property",
+            "name": "map",
+            "type": "ol.Map",
+            "class": "Heron.Application"
+        },
+        {
+            "file": "src\\Application.js",
+            "line": 35,
+            "description": "The mappanel.",
+            "itemtype": "property",
+            "name": "mapPanel",
+            "type": "Heron.widgets.MapPanel",
+            "class": "Heron.Application"
+        },
+        {
+            "file": "src\\Application.js",
+            "line": 41,
+            "description": "Starts the Heron application.",
+            "itemtype": "method",
+            "name": "launch",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The application configuration (i.e. Heron.app).\n- For example:\n  - config.fullVersion\n  - config.launch.afterStart\n  - config.launch.beforeEnd",
+                    "type": "Object"
+                },
+                {
+                    "name": "options",
+                    "description": "- Additional configuration (i.e. Heron.options).\n- For example:\n  - options.layout\n  - options.map\n  - options.mapContext",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.Application"
+        },
+        {
+            "file": "src\\Application.js",
+            "line": 102,
+            "description": "This event handler is fired after the layout (and the map) is created.\nComponents can use this event handler when a map reference is needed.",
+            "example": [
+                " \nHeron.App.on(\"afterlayout\",this.onAfterLayout,this);"
+            ],
+            "itemtype": "method",
+            "name": "onAfterLayout",
+            "class": "Heron.Application"
+        },
+        {
+            "file": "src\\Application.js",
+            "line": 114,
+            "description": "Parses the layout configuration and creates the application layout.",
+            "itemtype": "method",
+            "name": "createLayout",
+            "params": [
+                {
+                    "name": "layout",
+                    "description": "- The layout configuration (i.e. Heron.options.layout).",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.Application"
+        },
+        {
+            "file": "src\\Application.js",
+            "line": 159,
+            "description": "Loads the Heron mapContext.",
+            "itemtype": "method",
+            "name": "loadMapContext",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "- The configuration.\n- Example:\n  - config.url\n  - config.options",
+                    "type": "Object"
+                }
+            ],
+            "class": "Heron.Application"
+        },
+        {
+            "file": "src\\HeronStart.js",
+            "line": 4,
+            "description": "Loader configuration.",
+            "itemtype": "method",
+            "name": "setConfig",
+            "class": "Ext.application"
+        },
+        {
+            "file": "src\\HeronStart.js",
+            "line": 28,
+            "description": "Starts the Heron application.",
+            "itemtype": "method",
+            "name": "launch",
+            "class": "Ext.application"
+        },
+        {
+            "file": "src\\OLUtils.js",
+            "line": 12,
+            "description": "Zooms in/out by a delta zoomlevel step.",
+            "itemtype": "method",
+            "name": "zoomByDelta",
+            "params": [
+                {
+                    "name": "map",
+                    "description": "- The map.",
+                    "type": "ol.Map"
+                },
+                {
+                    "name": "delta",
+                    "description": "- Delta zoomlevel step.",
+                    "type": "Number"
+                },
+                {
+                    "name": "duration",
+                    "description": "- Easing duration.\n- Default: 250",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "class": "Heron.OLUtils"
+        },
+        {
+            "file": "src\\OLUtils.js",
+            "line": 46,
+            "description": "Zoom in 1 zoomlevel.",
+            "itemtype": "method",
+            "name": "zoomIn",
+            "params": [
+                {
+                    "name": "map",
+                    "description": "- The map.",
+                    "type": "ol.Map"
+                },
+                {
+                    "name": "duration",
+                    "description": "- Easing duration.\n- Default: 250",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "class": "Heron.OLUtils"
+        },
+        {
+            "file": "src\\OLUtils.js",
+            "line": 57,
+            "description": "Zoom out 1 zoomlevel.",
+            "itemtype": "method",
+            "name": "zoomOut",
+            "params": [
+                {
+                    "name": "map",
+                    "description": "- The map.",
+                    "type": "ol.Map"
+                },
+                {
+                    "name": "duration",
+                    "description": "- Easing duration.\n- Default: 250",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "class": "Heron.OLUtils"
+        },
+        {
+            "file": "src\\OLUtils.js",
+            "line": 68,
+            "description": "Zoom to center.",
+            "itemtype": "method",
+            "name": "zoomToCenter",
+            "params": [
+                {
+                    "name": "map",
+                    "description": "- The map.",
+                    "type": "ol.Map"
+                },
+                {
+                    "name": "center",
+                    "description": "- Center to zoom to.",
+                    "type": "ol.Coordinate"
+                },
+                {
+                    "name": "zoom",
+                    "description": "- Zoomlevel to zoom to.",
+                    "type": "Number"
+                },
+                {
+                    "name": "duration",
+                    "description": "- Easing duration.\n- Default: 250",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "class": "Heron.OLUtils"
+        },
+        {
+            "file": "src\\OLUtils.js",
+            "line": 101,
+            "description": "Zoom to extent.",
+            "itemtype": "method",
+            "name": "zoomToExtent",
+            "params": [
+                {
+                    "name": "map",
+                    "description": "- The map.",
+                    "type": "ol.Map"
+                },
+                {
+                    "name": "extent",
+                    "description": "- Extent to zoom to.\n- Example: [minx,miny,maxx,maxy] or {minx,miny,maxx,maxy}.",
+                    "type": "ol.Extent|Object"
+                },
+                {
+                    "name": "duration",
+                    "description": "- Easing duration.\n- Default: 250",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "class": "Heron.OLUtils"
+        },
+        {
+            "file": "src\\Theme.js",
+            "line": 14,
+            "description": "False when not yet initialized.",
+            "itemtype": "property",
+            "name": "isInitialized",
+            "type": "Boolean",
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.Theme"
+        },
+        {
+            "file": "src\\Theme.js",
+            "line": 21,
+            "description": "The style of the toolbar.",
+            "itemtype": "property",
+            "name": "toolbarStyle",
+            "type": "Object",
+            "class": "Heron.Theme"
+        },
+        {
+            "file": "src\\Theme.js",
+            "line": 27,
+            "description": "The height of the toolbar, aligned to the height of the theme's panel\nheader height.",
+            "itemtype": "property",
+            "name": "toolbarHeight",
+            "type": "Number",
+            "class": "Heron.Theme"
+        },
+        {
+            "file": "src\\Theme.js",
+            "line": 34,
+            "description": "Returns the current theme name based on the loaded css file with the\nfilename 'theme-<name>-all.css'.\nReturns an empty string when the css link is not found.",
+            "itemtype": "method",
+            "name": "getCurrentThemeName",
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Heron.Theme"
+        },
+        {
+            "file": "src\\Theme.js",
+            "line": 66,
+            "description": "Initializes theme dependent properties.",
+            "itemtype": "method",
+            "name": "init",
+            "class": "Heron.Theme"
+        },
+        {
+            "file": "src\\Theme.js",
+            "line": 107,
+            "description": "Update the toolbar layout and style based on the current loaded theme.\nThis method is called in the Application.launch method.",
+            "itemtype": "method",
+            "name": "updateToolbarLayoutAndStyle",
+            "class": "Heron.Theme"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 16,
+            "description": "Sets to defaultValue if option is not defined or null.",
+            "itemtype": "method",
+            "name": "checkOption",
+            "params": [
+                {
+                    "name": "option",
+                    "description": "- The variable to check.",
+                    "type": "String/Number/Object"
+                },
+                {
+                    "name": "defaultValue",
+                    "description": "- The value to set when the \nvariable is not defined or null.\n- Default: null",
+                    "type": "String/Number/Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String/Number/Object"
+            },
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 37,
+            "description": "Returns the short class name (i.e. MapPanel) of the component.",
+            "itemtype": "method",
+            "name": "getClassName",
+            "params": [
+                {
+                    "name": "cmp",
+                    "description": "- The component.",
+                    "type": "Ext.Component"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 53,
+            "description": "Returns the full class name (i.e. Heron.widgets.MapPanel) of the component.\nReturn an empty string when no class name found.",
+            "itemtype": "method",
+            "name": "getFullClassName",
+            "params": [
+                {
+                    "name": "cmp",
+                    "description": "- The component.",
+                    "type": "Ext.Component"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 70,
+            "description": "Returns the alias of the caller.",
+            "itemtype": "method",
+            "name": "getCallerAlias",
+            "params": [
+                {
+                    "name": "caller",
+                    "description": "- The caller.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 109,
+            "description": "Returns the value of a url parameter.",
+            "itemtype": "method",
+            "name": "getUrlParameter",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "- The url.",
+                    "type": "String"
+                },
+                {
+                    "name": "name",
+                    "description": "- The name of the parameter.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 127,
+            "description": "Returns True when no value is assigned to a variable or when the \nvariable is an empty String or Array, else False.",
+            "itemtype": "method",
+            "name": "isEmpty",
+            "params": [
+                {
+                    "name": "v",
+                    "description": "- The variable to check.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 145,
+            "description": "Returns True when a value is assigned to a variable and the variable\nis not null.",
+            "itemtype": "method",
+            "name": "isSet",
+            "params": [
+                {
+                    "name": "v",
+                    "description": "- The variable to check.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 160,
+            "description": "Shows an information message box with a message.",
+            "itemtype": "method",
+            "name": "msgBoxInfo",
+            "params": [
+                {
+                    "name": "msg",
+                    "description": "- The message to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 175,
+            "description": "Shows an error message box with a message.",
+            "itemtype": "method",
+            "name": "msgBoxError",
+            "params": [
+                {
+                    "name": "msg",
+                    "description": "- The message to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 190,
+            "description": "Shows an warning message box with a message.",
+            "itemtype": "method",
+            "name": "msgBoxWarning",
+            "params": [
+                {
+                    "name": "msg",
+                    "description": "- The message to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 205,
+            "description": "Shows a config error message in a sliding popup. Also logs the message\nto the console.\nWhen the Heron.ENABLE_TRACEBACK is set also shows trace back info.",
+            "itemtype": "method",
+            "name": "msgConfigError",
+            "params": [
+                {
+                    "name": "caller",
+                    "description": "- The caller (object,component) from which this\nmethod is called.",
+                    "type": "Object"
+                },
+                {
+                    "name": "msg",
+                    "description": "- The message to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 222,
+            "description": "Shows a config warning message in a sliding popup. Also logs the message\nto the console.",
+            "example": [
+                "\n Use in panel:\n   Heron.Utils.msgConfigWarning(this,__(\"No '{content}' tag found in html config.\"));\n Use in with custom alias:\n   Heron.Utils.msgConfigWarning({alias: \"sss\"},__(\"No '{content}' tag found in html config.\"));\n Use in with custom alias:\n   Heron.Utils.msgConfigWarning(\"yyy\",__(\"No '{content}' tag found in html config.\"));"
+            ],
+            "itemtype": "method",
+            "name": "msgConfigWarning",
+            "params": [
+                {
+                    "name": "caller",
+                    "description": "- The caller (object,component) from which this\nmethod is called.",
+                    "type": "Object"
+                },
+                {
+                    "name": "msg",
+                    "description": "- The message to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 251,
+            "description": "Shows an error message in a sliding popup. Also logs the message\nto the console.\nWhen the Heron.ENABLE_TRACEBACK is set also shows trace back info.",
+            "itemtype": "method",
+            "name": "msgError",
+            "params": [
+                {
+                    "name": "msg",
+                    "description": "- The message to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 279,
+            "description": "Shows an info message in a sliding popup.",
+            "itemtype": "method",
+            "name": "msgInfo",
+            "params": [
+                {
+                    "name": "msg",
+                    "description": "- The message to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 298,
+            "description": "Shows a warning message in a sliding popup. Also logs the message\nto the console.",
+            "itemtype": "method",
+            "name": "msgWarning",
+            "params": [
+                {
+                    "name": "msg",
+                    "description": "- The message to show.",
+                    "type": "String"
+                }
+            ],
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 320,
+            "description": "Parses a layerdef array with [\"ol.<namespace>.<name>\",config]\nto create an OpenLayers layer instance.\nReturns null when no valid layerdef is specified.",
+            "itemtype": "method",
+            "name": "parseLayerDefArray",
+            "params": [
+                {
+                    "name": "layerDefArray",
+                    "description": "- The layer definition array.",
+                    "type": "Array"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "ol.layer.Layer"
+            },
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 388,
+            "description": "Adds a value to the n-th element of the string.\nThe string should be like '0 1 2 3 4'.\nOnly integer values can be used.\nReturns str when an invalid index is used or an invalid string is used.\nThe index is 0 based!",
+            "example": [
+                " \nstrElementAdd('0 1 2 3',3,2);         returns '0 1 2 5'\n  \nTODO: strElementAdd(\"a 1 2 3 4 5\",0,2) geeft \"NaN 1 2 3 4 5\"."
+            ],
+            "itemtype": "method",
+            "name": "strElementAdd",
+            "params": [
+                {
+                    "name": "str",
+                    "description": "- The string with elements.",
+                    "type": "String"
+                },
+                {
+                    "name": "index",
+                    "description": "- The index of the element to add value.",
+                    "type": "Number"
+                },
+                {
+                    "name": "value",
+                    "description": "- The value to add.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 420,
+            "description": "Creates a class instance from class name and class config.",
+            "itemtype": "method",
+            "name": "stringToClassInstance",
+            "params": [
+                {
+                    "name": "className",
+                    "description": "- The class to create (i.e. \"<namespace>.<classname>\").",
+                    "type": "String"
+                },
+                {
+                    "name": "classConfig",
+                    "description": "- The class configuration.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 443,
+            "description": "Creates trace back information.",
+            "itemtype": "method",
+            "name": "traceBack",
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Heron.Utils"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 486,
+            "description": "Shortcut for Heron.Utils.{{#crossLink \"Heron.Utils/checkOption:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "checkOption",
+            "class": "shortcuts",
+            "module": "Heron",
+            "submodule": "shortcuts"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 492,
+            "description": "Shortcut for Heron.Utils.{{#crossLink \"Heron.Utils/isSet:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "isSet",
+            "class": "shortcuts",
+            "module": "Heron",
+            "submodule": "shortcuts"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 498,
+            "description": "Shortcut for Heron.Utils.{{#crossLink \"Heron.Utils/isEmpty:method\"}}{{/crossLink}}",
+            "itemtype": "method",
+            "name": "isEmpty",
+            "class": "shortcuts",
+            "module": "Heron",
+            "submodule": "shortcuts"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 515,
+            "description": "Formats a number with a decimal and a thousand separator.",
+            "itemtype": "method",
+            "name": "format",
+            "params": [
+                {
+                    "name": "decimals",
+                    "description": "- Number of decimals.\n- Default: 0",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Number",
+            "module": "Heron",
+            "submodule": "Number"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 537,
+            "description": "Formats a number with a decimal and a thousand separator using ',' as \ndecimal separator and '.' as thousand separator.",
+            "itemtype": "method",
+            "name": "formatNL",
+            "params": [
+                {
+                    "name": "decimals",
+                    "description": "- Number of decimals.\n- Default: 0",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Number",
+            "module": "Heron",
+            "submodule": "Number"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 570,
+            "description": "Returns the part after 'str'.\nReturns an empty string if 'str' is not found.",
+            "itemtype": "method",
+            "name": "after",
+            "params": [
+                {
+                    "name": "str",
+                    "description": "- The string to search for.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "String",
+            "module": "Heron",
+            "submodule": "String"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 585,
+            "description": "Returns the part after the last 'str'.\nReturns an empty string if 'str' is not found.",
+            "itemtype": "method",
+            "name": "afterLast",
+            "params": [
+                {
+                    "name": "str",
+                    "description": "- The string to search for.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "String",
+            "module": "Heron",
+            "submodule": "String"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 600,
+            "description": "Returns the part before 'str'.\nReturns an empty string if 'str' is not found.",
+            "itemtype": "method",
+            "name": "before",
+            "params": [
+                {
+                    "name": "str",
+                    "description": "- The string to search for.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "String",
+            "module": "Heron",
+            "submodule": "String"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 615,
+            "description": "Formats a list of arguments to a string.",
+            "example": [
+                "\n  \"{1} and {0}\".format(\"a\",\"b\") gives \"b and a\"."
+            ],
+            "itemtype": "method",
+            "name": "format",
+            "params": [
+                {
+                    "name": "args",
+                    "description": "- The arguments.",
+                    "type": "String|Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "String",
+            "module": "Heron",
+            "submodule": "String"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 632,
+            "description": "Adds a padding character on the left side to create a string of maximum\nlength.",
+            "example": [
+                "\n  \"34\".padLeft(10,\"-\")     returns -------34."
+            ],
+            "itemtype": "method",
+            "name": "padLeft",
+            "params": [
+                {
+                    "name": "len",
+                    "description": "- The maximum length of the returned string.",
+                    "type": "Number"
+                },
+                {
+                    "name": "c",
+                    "description": "- The character for padding.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "String",
+            "module": "Heron",
+            "submodule": "String"
+        },
+        {
+            "file": "src\\Utils.js",
+            "line": 650,
+            "description": "Adds a padding character on the right side to create a string of maximum\nlength.",
+            "example": [
+                "\n  \"34\".padRight(10,\"-\")     returns 34-------."
+            ],
+            "itemtype": "method",
+            "name": "padRight",
+            "params": [
+                {
+                    "name": "len",
+                    "description": "- The maximum length of the returned string.",
+                    "type": "Number"
+                },
+                {
+                    "name": "c",
+                    "description": "- The character for padding.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "String",
+            "module": "Heron",
+            "submodule": "String"
+        }
+    ],
+    "warnings": []
+}

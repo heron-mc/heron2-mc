@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Heron" default=".help">
+
+    <script language="javascript">
+        <![CDATA[
+            var dir = project.getProperty("basedir"),
+                cmdDir = project.getProperty("cmd.dir"),
+                cmdLoaded = project.getReference("senchaloader");
+
+            if (!cmdLoaded) {
+                function echo(message, file) {
+                    var e = project.createTask("echo");
+                    e.setMessage(message);
+                    if (file) {
+                        e.setFile(file);
+                    }
+                    e.execute();
+                };
+
+                if (!cmdDir) {
+
+                    function exec(args) {
+                        var process = java.lang.Runtime.getRuntime().exec(args),
+                            input = new java.io.BufferedReader(new java.io.InputStreamReader(process.getInputStream())),
+                            headerFound = false,
+                            line;
+
+                        while (line = input.readLine()) {
+                            line = line + '';
+                            java.lang.System.out.println(line);
+                            if (line.indexOf("Sencha Cmd") > -1) {
+                                headerFound = true;
+                            }
+                            else if (headerFound && !cmdDir) {
+                                cmdDir = line;
+                                project.setProperty("cmd.dir", cmdDir);
+                            }
+                        }
+                        process.waitFor();
+                        return !!cmdDir;
+                    }
+
+                    if (!exec(["sencha", "which"])) {
+                        var tmpFile = "tmp.sh";
+                        echo("source ~/.bash_profile; sencha " + whichArgs.join(" "), tmpFile);
+                        exec(["/bin/sh", tmpFile]);
+                        new java.io.File(tmpFile)['delete'](); 
+                    }
+                }
+            }
+
+            if (cmdDir && !project.getTargets().containsKey("init-cmd")) {
+                var importDir = project.getProperty("build-impl.dir") || 
+                                (cmdDir + "/ant/build/package/build-impl.xml");
+                var importTask = project.createTask("import");
+
+                importTask.setOwningTarget(self.getOwningTarget());
+                importTask.setLocation(self.getLocation());
+                importTask.setFile(importDir);
+                importTask.execute();
+            }
+        ]]>
+    </script>
+    <!--
+    -->
+    
+    <target name="doHeronCopy">
+        <echo message="${doHeronCopyParam}"/>
+    </target>
+    
+    <target name="-after-build">
+        <!-- Copy Examples -->
+        <x-echo message="[Heron] Copying examples..."/>
+        <copy todir="${package.dir}/build/examples" overwrite="true">
+            <fileset dir="${package.dir}/examples">
+                <include name="**/*"/>
+            </fileset>
+        </copy>
+        <!-- Replace -->
+        <x-echo message="[Heron] Updating html files..."/>
+        <replace dir="${package.dir}/build/examples" value="../../Heron.js">
+          <include name="**/index.html"/>
+          <replacetoken>../../src/HeronStart.js</replacetoken>
+        </replace>
+        <replace dir="${package.dir}/build/examples" value="../../Heron.js">
+          <include name="**/index-debug.html"/>
+          <replacetoken>../../src/HeronStart.js</replacetoken>
+        </replace>
+        <!-- Replace examples\index.html -->
+        <x-echo message="[Heron] Updating index.html file..."/>
+        <replace dir="${package.dir}/build/examples" value="../Heron.js">
+          <include name="**/index.html"/>
+          <replacetoken>../src/HeronStart.js</replacetoken>
+        </replace>
+        <!-- Cleanup -->
+        <x-echo message="[Heron] Cleaning up..."/>
+        <delete file="${package.dir}/build/config.rb"/>
+        <delete file="${package.dir}/build/Heron-all-debug.scss"/>
+        <delete file="${package.dir}/build/Heron-all-rtl-debug.scss"/>
+        <delete file="${package.dir}/build/resources/Heron-all-rtl.css"/>
+        <delete file="${package.dir}/build/resources/Heron-all-rtl-debug.css"/>
+        <!--
+        <x-echo message="${package.namespace}"/>
+        <x-echo message="${package.name}"/>
+        <x-echo message="${package.theme}"/>
+        <x-echo message="${package.toolkit}"/>
+        -->
+        <!-- Build info -->
+        <x-echo message="[Heron] Version ${package.version} (theme: ${package.theme})"/>
+        <tstamp>
+          <format property="NOW" pattern="yyyyMMdd HH:mm:ss"/>
+        </tstamp>
+        <x-echo>[Heron] Build done: ${NOW}</x-echo>        
+        
+        <!-- NOK
+        <x-echo message="${package.heroncopy}"/>
+        <foreach param="doHeronCopyParam" list="0,1,2,3,4" target="doHeronCopy"/>
+        -->
+        
+    </target>
+    
+    <!--
+    The following targets can be provided to inject logic before and/or after key steps
+    of the build process:
+
+        The "init-local" target is used to initialize properties that may be personalized
+        for the local machine.
+
+            <target name="-before-init-local"/>
+            <target name="-after-init-local"/>
+
+        The "clean" target is used to clean build output from the build.dir.
+
+            <target name="-before-clean"/>
+            <target name="-after-clean"/>
+
+        The general "init" target is used to initialize all other properties, including
+        those provided by Sencha Cmd.
+
+            <target name="-before-init"/>
+            <target name="-after-init"/>
+
+        The "build" target performs the call to Sencha Cmd to build the application.
+
+            <target name="-before-build"/>
+            <target name="-after-build"/>
+    -->
+
+</project>

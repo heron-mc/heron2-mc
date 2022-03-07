@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Heron2 Examples</title>
+<!-- External lib: OpenLayers -->
+<link rel="stylesheet" type="text/css" href="/openlayers464/css/ol.css">
+<!-- External lib: ExtJS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/classic/theme-crisp/resources/theme-crisp-all.css">
+<!-- Heron -->
+<link rel="stylesheet" type="text/css" href="../resources/css/index.css">
+</head>
+<body>
+<!-- External lib: Proj4js -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4-src.js"></script>
+<!-- External lib: OpenLayers -->
+<script type="text/javascript" src="/openlayers464/build/ol-debug.js"></script>
+<!-- External lib: ExtJS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/ext-all.js"></script>
+<!-- Heron Init -->
+<script type="text/javascript" src="../resources/HeronInit.js"></script>
+<!-- NO Heron Language -->
+<!-- Heron Configuration -->
+<script type="text/javascript">
+
+/* global Heron */
+
+//Heron.DEBUG = false;
+Heron.TEST = false;
+
+Heron.app.paths.src = "../src";
+
+let appDataItemTpl = ""+
+  "<a href='{href}' target='_blank'>"+
+  "<div class='exampleBlock'><h2>{title}</h2>"+
+  "<p>{text}</p></div></a>";
+
+let appExamples = [{
+  title: "Animated markers (OL)", 
+  text: "Shows how to use animated point markers.",
+  href: "./ol_animated_markers/index.html"
+},{
+  title: "Chart - Houses", 
+  text: "Shows the number of houses per period of construction in a chart.",
+  href: "./chart_houses/index.html"
+},{
+  title: "Clustering (OL)", 
+  text: "Shows how to cluster features.",
+  href: "./ol_clustering/index.html"
+},{
+  title: "Color Manipulation (OL)", 
+  text: "Shows how to manipulation color with a raster source in OpenLayers.",
+  href: "./ol_colormanipulation/index.html"
+},{
+  title: "Default", 
+  text: "Shows a default application.",
+  href: "./default/index.html"
+},{
+  title: "Default NL", 
+  text: "Shows a default application for The Netherlands.",
+  href: "./default_nl/index.html"
+},{
+  title: "HTML Panel", 
+  text: "Shows a html panel.",
+  href: "./htmlpanel/index.html"
+},{
+  title: "Layer Visibility", 
+  text: "Shows how to change the visibility of layers after layer definition.",
+  href: "./layer_visibility/index.html"
+},{
+  title: "Layout", 
+  text: "Shows a custom layout.",
+  href: "./layout/index.html"
+},{
+  title: "Map In DIV", 
+  text: "Shows a map in a DIV element.",
+  href: "./mapdiv/index.html"
+},{
+  title: "Map In IFrame", 
+  text: "Shows a map in an IFrame.",
+  href: "./mapiframe/index.html"
+},{
+  title: "Map In Window", 
+  text: "Shows a map in a window.",
+  href: "./mapwindow/index.html"
+},{
+  title: "Minimal", 
+  text: "The 'Hello World' app, the most minimal config to define a Heron app.",
+  href: "./minimal/index.html"
+},{
+  title: "Minimal With Custom Layer", 
+  text: "The 'Hello World' app, the most minimal config to define a Heron app,"+
+        " but with a custom layer.",
+  href: "./minimal_customlayer/index.html"
+},{
+  title: "Override Defaults", 
+  text: "Shows how to override the default settings of components.",
+  href: "./override_defaults/index.html"
+},{
+  title: "Rotate Map",
+  text: "Shows how to rotate a map.",
+  href: "./ol_rotatemap/index.html"
+},{
+  title: "Sea Level NL (OL)", 
+  text: "Uses the Dutch elevation dataset AHN2 in OpenLayers to show the situation of areas compared to the sea level.",
+  href: "./ol_sealevel_nl/index.html"
+},{
+  title: "Simple Feature Info", 
+  text: "Shows how to get feature info from a layer.",
+  href: "./simplefeatureinfo/index.html"
+},{
+  title: "Simple LayerTree", 
+  text: "Shows how to use a layertree for switching layers on/off.",
+  href: "./simplelayertree/index.html"
+},{
+  title: "Statusbar", 
+  text: "Shows a custom statusbar.",
+  href: "./statusbar/index.html"
+},{
+  title: "Swipe (OL)",
+  text: "Shows how to swipe layers in OpenLayers.",
+  href: "./ol_swipe/index.html"
+},{
+  title: "Theme Crisp", 
+  text: "Shows how to use the Crisp ui theme.",
+  href: "./theme_crisp/index.html"
+},{
+  title: "Theme Gray", 
+  text: "Shows how to use the Gray ui theme.",
+  href: "./theme_gray/index.html"
+},{
+  title: "Theme Neptune", 
+  text: "Shows how to use the Neptune ui theme.",
+  href: "./theme_neptune/index.html"
+},{
+  title: "Theme Triton", 
+  text: "Shows how to use the Triton ui theme.",
+  href: "./theme_triton/index.html"
+},{
+  title: "Toolbar", 
+  text: "Shows a custom toolbar.",
+  href: "./toolbar/index.html"
+},{
+  title: "Toolbar Menu", 
+  text: "Shows a toolbar with a menu.",
+  href: "./toolbar_menu/index.html"
+}];
+
+let appDevItemTpl = ""+
+  "<a href='{href}' target='_blank'>{title}</a>";
+
+let appDevs = [{
+  title: "General", 
+  href: "./develop/index.html"
+}];
+
+let appLinkItemTpl = ""+
+  "<a href='{href}' target='_blank'>{title}</a>";
+
+let appLinks = [{
+  title: "ExtJS 6.2 Doc", 
+  href: "https://docs.sencha.com/extjs/6.2.0/"
+},{
+  title: "ExtJS 6.2 API", 
+  href: "https://docs.sencha.com/extjs/6.2.0/classic/Ext.html"
+},{  
+  title: "ExtJS 6.2 Examples", 
+  href: "https://examples.sencha.com/extjs/6.2.0/examples"
+},{  
+  title: "ExtJS 3.4 API", 
+  href: "https://docs.sencha.com/extjs/3.4.0/#!/api"
+},{
+  title: "GeoExt 3.1", 
+  href: "https://geoext.github.io/geoext3/"
+},{
+  title: "GeoExt 3.1 + ExtJS API", 
+  href: "https://geoext.github.io/geoext3/v3.1.0/docs-w-ext/"
+},{
+  title: "Heron 1.0.6 Examples", 
+  href: "https://heron-mc.org/examples.html"
+},{
+  title: "OpenLayers API", 
+  href: "https://openlayers.org/en/latest/apidoc/"
+},{
+  title: "OpenLayers Examples", 
+  href: "https://openlayers.org/en/latest/examples/"
+},{
+  title: "PDOK Viewer", 
+  href: "https://app.pdok.nl/viewer/"
+},{
+  title: "Kad Viewer", 
+  href: "https://kadviewer.map5.nl/"
+}];
+
+Heron.app.showDevPanel = false;
+//Heron.app.showDevPanel = true;
+
+Heron.options.layout = {
+  xtype: "panel",
+  layout: "border",
+  items: [{
+    //##########################################################################
+    // NORTH
+    //##########################################################################
+    xtype: "panel",
+    region : "north",
+    width: "100%",
+    height: 50,
+    layout: "hbox",
+    border: false,
+    items: [{
+      xtype: "panel",
+      height: "100%",
+      flex: 1,
+      border: false,
+      bodyCls: "exampleHeader",
+      html: "<div><h1>Heron 2 - Examples</h1></div>"
+    },{
+      xtype: "panel",
+      height: "100%",
+      flex: 1,
+      border: false,
+      layout: {
+        type: "vbox",
+        pack: "end",
+        align: "stretch"
+      },
+      bodyCls: "exampleHeader",
+      items: [{
+        xwidth: "100%",
+        bodyCls: "exampleHeader",
+        border: false,
+        margin: 5,
+        layout: {
+          type: "hbox",
+          pack: "end"
+        },
+        items: [{
+          bodyCls: "exampleButton",
+          border: false,
+          html: "<a href='../doc/index.html' target='_blank'>"+__("Documentation")+"</a>"
+        }]
+      }]
+    }]
+  },{      
+    //##########################################################################
+    // CENTER
+    //##########################################################################
+    xtype: "panel",
+    region: "center",
+    layout: "border",
+    width: "100%",
+    bodyCls: "examplePage",
+    defaults: {
+      margin: 5
+    },
+    border: false,
+    items: [{
+      //########################################################################
+      // CENTER CENTER
+      //########################################################################
+      xtype: "dataview",
+      region: "center",
+      border: false,
+      bodyCls: "exampleSubPage",
+      itemTpl: appDataItemTpl,
+      itemSelector: 'div.exampleBlock',
+      store: {
+        fields: ["href", "title", "text"],
+        data: appExamples
+      }
+    },{      
+      //########################################################################
+      // CENTER EAST
+      //########################################################################
+      xtype: "panel",
+      region: "east",
+      layout: {
+        type: "vbox",
+        pack: "start"
+        ,align: "stretch"
+      },
+      height: 100,
+      width: "20%",
+      margin: "10 10 0 5",
+      bodyCls: "examplePageLinks",
+      border: false,
+      hidden: !Heron.app.showDevPanel,
+      defaults: {
+        border: false,
+        margin: "0 5 0 5",
+        xxpadding: 5
+      },
+      items: [{
+        xtype: "panel",
+        height: 30,
+        bodyCls: "exampleLinkTitle",
+        html: "<h2>Develop Examples</h2>"
+      },{
+        xtype: "dataview",
+        bodyCls: "exampleLink",
+        itemTpl: appDevItemTpl,
+        store: {
+          fields: ["href","title"],
+          data: appDevs
+        }
+      },{
+        xtype: "panel",
+        height: 30,
+        border: false,
+        bodyCls: "exampleLinkTitle",
+        html: "<span><h2>Links</h2></span>"
+      },{
+        xtype: "dataview",
+        bodyCls: "exampleLink",
+        itemTpl: appLinkItemTpl,
+        store: {
+          fields: ["href","title"],
+          data: appLinks
+        }
+      }]
+    }]
+  }]
+};
+
+</script>
+<!-- Heron Start -->
+<script type="text/javascript" src="../Heron.js"></script>
+</body>
+</html>

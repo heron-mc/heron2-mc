@@ -1,0 +1,115 @@
+/*******************************************************************************
+ * GENERAL
+ ******************************************************************************/
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana,Helvetica,sans-serif;
+  color: #007ea9;
+}
+a:link, a:visited, a:active {
+  border-style: none;
+  border-width: 0;
+  color: #007ea9;
+  line-height: normal;
+  text-decoration: none;
+}
+/*******************************************************************************
+ * PAGE
+ ******************************************************************************/
+.examplePage {
+  overflow:auto;
+  height:100%;
+  width:100%;
+  padding: 10px;
+  background-color: #ebebeb;
+  background-image: linear-gradient(0deg,#f4f4f4 1.1px, transparent 0),
+                    linear-gradient(90deg,#f4f4f4 1.1px, transparent 0);
+  background-size: 12px 12px;
+}    
+.examplePageLinks {
+  background-color: #f6f6f6;
+}    
+/*******************************************************************************
+ * HEADER
+ ******************************************************************************/
+.exampleHeader {
+  padding-left: 10px;
+}
+.exampleHeader h1 {
+  font-size: 1.5em;
+  color: white;
+}
+.exampleHeader, .exampleDocumentation {
+  background-color: #005A78;
+}
+/*******************************************************************************
+ * DOCUMENT
+ ******************************************************************************/
+.exampleDocumentation {
+  padding: 30px 10px 10px 10px ;
+  text-align: right;
+}
+.exampleDocumentation a:link, .exampleDocumentation a:active, .exampleDocumentation a:visited {
+  color: white;
+  text-decoration: none;
+}
+/*******************************************************************************
+ * BUTTON
+ ******************************************************************************/
+.exampleButton {
+  background-color: #005A78;
+  color: white;
+}
+.exampleButton:hover, .exampleButton a:hover {
+  color: #D2F1FA;
+}
+.exampleButton a:link, .exampleButton a:active, .exampleButton a:visited {
+  color: white;
+}
+/*******************************************************************************
+ * LINKTITLE
+ ******************************************************************************/
+.exampleLinkTitle {
+  background-color: #f6f6f6;
+}    
+.exampleLinkTitle h2 {
+  font-size: 1em;
+}
+/*******************************************************************************
+ * LINK
+ ******************************************************************************/
+.exampleLink {
+  height: 1em;
+  line-height: normal;
+}    
+.exampleLink a:hover {
+  color: red;
+}    
+
+/*******************************************************************************
+ * BLOCK
+ ******************************************************************************/
+.exampleBlock h2 {
+  margin: 0;
+  font-size: 1em;
+}
+.exampleBlock p {
+  margin-top: 5px;
+}
+.exampleBlock {
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  line-height: normal;
+  /* licht */
+  background-color: #f6f6f6;
+
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #aaa;
+}    
+.exampleBlock:hover {
+  /* donker */
+  background-color: #dddddd;
+}

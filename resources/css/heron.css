@@ -1,0 +1,83 @@
+
+/*******************************************************************************
+ * x- tags:
+    .x-box-inner
+    .x-btn-icon-el-default-toolbar-small
+    .x-btn-icon-el-default-toolbar-small.x-btn-glyph
+ ******************************************************************************/
+
+/*******************************************************************************
+ * EXTJS Settings.
+ ******************************************************************************/
+
+/* Default toolbar spacer width. */
+.x-toolbar .x-toolbar-spacer {
+  width: 2px;
+}
+
+/*******************************************************************************
+ * Heron Settings.
+ ******************************************************************************/
+
+/* FontAwesome Icons */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fontawesome/fontawesome-webfont.eot');
+  src: url('../fontawesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fontawesome/fontawesome-webfont.woff') format('woff'),
+       url('../fontawesome/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Highlights in the info text. */
+.hr-panel em{
+  font-style: normal;
+  font-weight: normal;
+  color: #157fcc;
+}
+/* div/panel with scroll bars. */
+.hr-scroll {
+  overflow:auto;
+  height:100%;
+  width:100%;
+}
+.hr-htmlpanel a:link, .hr-htmlpanel a:visited {
+  text-decoration: none;
+  color: #157fcc;
+}
+/* Toolbar button opacity. */
+.hr-toolbar-item {
+  opacity: 1.00;
+}
+/* Toolbar button icon color. */
+.hr-toolbar-item-icon {
+  color: black;
+}
+
+/* Statusbar item fontsize. */
+.hr-statusbar-item {
+  font-size: 12px;
+}
+/* Statusbar item fontsize+bold. */
+.hr-statusbar-item-bold {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* Error, Info and Warning popup colors. */
+.hr-error-popup, .hr-info-popup, .hr-warning-popup {
+  border-color: #CFCFCF;
+  background-color: #FFFFC0;
+}
+
+/*******************************************************************************
+ * OpenLayers Settings.
+ ******************************************************************************/
+
+/* Zoomin/zoomout drag rectange. */
+.ol-box {
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 2px dashed rgb(150,150,150);
+  background: rgba(255,255,255,0.35);
+}

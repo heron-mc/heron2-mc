@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Heron.Utils</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+
+</head>
+<body class="yui3-skin-sam" onload="onLoad()">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <!--
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
+            -->
+            <h1></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                            <!--
+                            -->
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ext.application.html">Ext.application</a></li>
+                                <li><a href="../classes/Heron.Application.html">Heron.Application</a></li>
+                                <li><a href="../classes/Heron.base.Control.html">Heron.base.Control</a></li>
+                                <li><a href="../classes/Heron.base.MapCoordinate.html">Heron.base.MapCoordinate</a></li>
+                                <li><a href="../classes/Heron.base.Panel.html">Heron.base.Panel</a></li>
+                                <li><a href="../classes/Heron.controls.MapCoordinateX.html">Heron.controls.MapCoordinateX</a></li>
+                                <li><a href="../classes/Heron.controls.MapCoordinateY.html">Heron.controls.MapCoordinateY</a></li>
+                                <li><a href="../classes/Heron.controls.MapProjection.html">Heron.controls.MapProjection</a></li>
+                                <li><a href="../classes/Heron.controls.SimpleFeatureInfo.html">Heron.controls.SimpleFeatureInfo</a></li>
+                                <li><a href="../classes/Heron.controls.ZoomPreviousNext.html">Heron.controls.ZoomPreviousNext</a></li>
+                                <li><a href="../classes/Heron.debug.LogMapInfo.html">Heron.debug.LogMapInfo</a></li>
+                                <li><a href="../classes/Heron.debug.Test.html">Heron.debug.Test</a></li>
+                                <li><a href="../classes/Heron.OLUtils.html">Heron.OLUtils</a></li>
+                                <li><a href="../classes/Heron.Theme.html">Heron.Theme</a></li>
+                                <li><a href="../classes/Heron.Utils.html">Heron.Utils</a></li>
+                                <li><a href="../classes/Heron.widgets.HtmlPanel.html">Heron.widgets.HtmlPanel</a></li>
+                                <li><a href="../classes/Heron.widgets.MapBar.html">Heron.widgets.MapBar</a></li>
+                                <li><a href="../classes/Heron.widgets.MapPanel.html">Heron.widgets.MapPanel</a></li>
+                                <li><a href="../classes/Heron.widgets.SimpleFeatureInfoPanel.html">Heron.widgets.SimpleFeatureInfoPanel</a></li>
+                                <li><a href="../classes/Heron.widgets.SimpleLayerTreePanel.html">Heron.widgets.SimpleLayerTreePanel</a></li>
+                                <li><a href="../classes/Heron.widgets.ToolButton.html">Heron.widgets.ToolButton</a></li>
+                                <li><a href="../classes/Number.html">Number</a></li>
+                                <li><a href="../classes/shortcuts.html">shortcuts</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/Heron.html">Heron</a></li>
+                                <li><a href="../modules/Number.html">Number</a></li>
+                                <li><a href="../modules/shortcuts.html">shortcuts</a></li>
+                                <li><a href="../modules/String.html">String</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Heron.Utils Class</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            Defined in: <a href="../files/src_Utils.js.html#l5"><code>src\Utils.js:5</code></a>
+        </div>
+
+            Module: <a href="../modules/shortcuts.html">shortcuts</a><br>
+            Parent Module: <a href="../modules/Heron.html">Heron</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>General utilities.
+<br><i>singleton</i></p>
+
+</div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                            <li class="index-item method">
+                                <a href="#method_checkOption">checkOption</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_getCallerAlias">getCallerAlias</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getClassName">getClassName</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getFullClassName">getFullClassName</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_getUrlParameter">getUrlParameter</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_isEmpty">isEmpty</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_isSet">isSet</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_msgBoxError">msgBoxError</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_msgBoxInfo">msgBoxInfo</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_msgBoxWarning">msgBoxWarning</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_msgConfigError">msgConfigError</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_msgConfigWarning">msgConfigWarning</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_msgError">msgError</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_msgInfo">msgInfo</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_msgWarning">msgWarning</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_parseLayerDefArray">parseLayerDefArray</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_strElementAdd">strElementAdd</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_stringToClassInstance">stringToClassInstance</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_traceBack">traceBack</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_checkOption" class="method item">
+    <h3 class="name"><code>checkOption</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>option</code>
+                </li>
+                <li class="arg">
+                        <code>defaultValue</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">String/Number/Object</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l16"><code>src\Utils.js:16</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets to defaultValue if option is not defined or null.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">option</code>
+                        <span class="type">String/Number/Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The variable to check.</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">defaultValue</code>
+                        <span class="type">String/Number/Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The value to set when the
+variable is not defined or null.</li>
+<li>Default: null</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String/Number/Object</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getCallerAlias" class="method item private">
+    <h3 class="name"><code>getCallerAlias</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>caller</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l70"><code>src\Utils.js:70</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the alias of the caller.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">caller</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The caller.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getClassName" class="method item">
+    <h3 class="name"><code>getClassName</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>cmp</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l37"><code>src\Utils.js:37</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the short class name (i.e. MapPanel) of the component.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">cmp</code>
+                        <span class="type">Ext.Component</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The component.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getFullClassName" class="method item">
+    <h3 class="name"><code>getFullClassName</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>cmp</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l53"><code>src\Utils.js:53</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the full class name (i.e. Heron.widgets.MapPanel) of the component.
+Return an empty string when no class name found.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">cmp</code>
+                        <span class="type">Ext.Component</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The component.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getUrlParameter" class="method item private">
+    <h3 class="name"><code>getUrlParameter</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>url</code>
+                </li>
+                <li class="arg">
+                        <code>name</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l109"><code>src\Utils.js:109</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the value of a url parameter.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">url</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The url.</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The name of the parameter.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_isEmpty" class="method item">
+    <h3 class="name"><code>isEmpty</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>v</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l127"><code>src\Utils.js:127</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns True when no value is assigned to a variable or when the
+variable is an empty String or Array, else False.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">v</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The variable to check.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_isSet" class="method item">
+    <h3 class="name"><code>isSet</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>v</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l145"><code>src\Utils.js:145</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns True when a value is assigned to a variable and the variable
+is not null.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">v</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The variable to check.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_msgBoxError" class="method item">
+    <h3 class="name"><code>msgBoxError</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>msg</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l175"><code>src\Utils.js:175</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Shows an error message box with a message.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">msg</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The message to show.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_msgBoxInfo" class="method item">
+    <h3 class="name"><code>msgBoxInfo</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>msg</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l160"><code>src\Utils.js:160</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Shows an information message box with a message.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">msg</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The message to show.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_msgBoxWarning" class="method item">
+    <h3 class="name"><code>msgBoxWarning</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>msg</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l190"><code>src\Utils.js:190</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Shows an warning message box with a message.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">msg</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The message to show.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_msgConfigError" class="method item">
+    <h3 class="name"><code>msgConfigError</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>caller</code>
+                </li>
+                <li class="arg">
+                        <code>msg</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l205"><code>src\Utils.js:205</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Shows a config error message in a sliding popup. Also logs the message
+to the console.
+When the Heron.ENABLE_TRACEBACK is set also shows trace back info.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">caller</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The caller (object,component) from which this
+method is called.</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">msg</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The message to show.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_msgConfigWarning" class="method item">
+    <h3 class="name"><code>msgConfigWarning</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>caller</code>
+                </li>
+                <li class="arg">
+                        <code>msg</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l222"><code>src\Utils.js:222</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Shows a config warning message in a sliding popup. Also logs the message
+to the console.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">caller</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The caller (object,component) from which this
+method is called.</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">msg</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The message to show.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <p>Use in panel:
+Heron.Utils.msgConfigWarning(this,<strong>(&quot;No '{content}' tag found in html config.&quot;));
+Use in with custom alias:
+Heron.Utils.msgConfigWarning({alias: &quot;sss&quot;},</strong>(&quot;No '{content}' tag found in html config.&quot;));
+Use in with custom alias:
+Heron.Utils.msgConfigWarning(&quot;yyy&quot;,__(&quot;No '{content}' tag found in html config.&quot;));</p>
+
+            </div>
+        </div>
+</div>
+<div id="method_msgError" class="method item">
+    <h3 class="name"><code>msgError</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>msg</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l251"><code>src\Utils.js:251</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Shows an error message in a sliding popup. Also logs the message
+to the console.
+When the Heron.ENABLE_TRACEBACK is set also shows trace back info.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">msg</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The message to show.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_msgInfo" class="method item">
+    <h3 class="name"><code>msgInfo</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>msg</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l279"><code>src\Utils.js:279</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Shows an info message in a sliding popup.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">msg</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The message to show.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_msgWarning" class="method item">
+    <h3 class="name"><code>msgWarning</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>msg</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l298"><code>src\Utils.js:298</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Shows a warning message in a sliding popup. Also logs the message
+to the console.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">msg</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The message to show.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_parseLayerDefArray" class="method item">
+    <h3 class="name"><code>parseLayerDefArray</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>layerDefArray</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">ol.layer.Layer</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l320"><code>src\Utils.js:320</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Parses a layerdef array with [&quot;ol.<namespace>.<name>&quot;,config]
+to create an OpenLayers layer instance.
+Returns null when no valid layerdef is specified.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">layerDefArray</code>
+                        <span class="type">Array</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The layer definition array.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">ol.layer.Layer</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_strElementAdd" class="method item">
+    <h3 class="name"><code>strElementAdd</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>str</code>
+                </li>
+                <li class="arg">
+                        <code>index</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l388"><code>src\Utils.js:388</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a value to the n-th element of the string.
+The string should be like '0 1 2 3 4'.
+Only integer values can be used.
+Returns str when an invalid index is used or an invalid string is used.
+The index is 0 based!</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">str</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The string with elements.</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type"><a href="../classes/Number.html" class="crosslink">Number</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The index of the element to add value.</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type"><a href="../classes/Number.html" class="crosslink">Number</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The value to add.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>:
+            </div>
+        </div>
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <p>strElementAdd('0 1 2 3',3,2);         returns '0 1 2 5'</p>
+<p>TODO: strElementAdd(&quot;a 1 2 3 4 5&quot;,0,2) geeft &quot;NaN 1 2 3 4 5&quot;.</p>
+
+            </div>
+        </div>
+</div>
+<div id="method_stringToClassInstance" class="method item">
+    <h3 class="name"><code>stringToClassInstance</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>className</code>
+                </li>
+                <li class="arg">
+                        <code>classConfig</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l420"><code>src\Utils.js:420</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Creates a class instance from class name and class config.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">className</code>
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The class to create (i.e. &quot;<namespace>.<classname>&quot;).</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">classConfig</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>The class configuration.</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_traceBack" class="method item">
+    <h3 class="name"><code>traceBack</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_Utils.js.html#l443"><code>src\Utils.js:443</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Creates trace back information.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/String.html" class="crosslink">String</a></span>:
+            </div>
+        </div>
+
+
+</div>
+            </div>
+
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+
+<script>
+var onLoad = function() {
+  var css;
+  var head;
+  var style;
+  var stTab;
+  var stTabSelected;
+  var stUl;
+  
+  //console.log("onLoad");
+  
+  css = "";
+  css += "h1, h2, h3, h4, h5, h6 { color: #007ea9; }";
+  css += "a { color: #007ea9; }";
+  //css += "#hd { background: black; }";
+  css += "#hd { background: #005A78; }";
+  css += "#hd div { color: white; }";
+  css += "#hd h1 { color: white; }";
+  
+  css += ".tabs li:nth-child(1) a:nth-child(1) { background: #007ea9 !important; }";
+  css += ".tabs li:nth-child(1) a:nth-child(1) { border-color: #007ea9 !important; }";
+  css += ".tabs li:nth-child(2) a:nth-child(1) { visibility: hidden !important; }";
+  css += ".tabs { border-color: #007ea9 !important; }";
+
+  stTab = "{ background: #f0f1f8 !important; }";
+  stTabSelected = "{ background: #007ea9 !important; border-color: #007ea9 !important; }";
+  stUl = "{ border-color: #007ea9 !important; }";
+
+  css += ".api-class-tab.index.yui3-tab.yui3-widget a "+stTab;
+  css += ".api-class-tab.index.yui3-tab.yui3-widget.yui3-tab-selected a "+stTabSelected;
+  css += ".api-class-tab.methods.yui3-tab.yui3-widget a "+stTab;
+  css += ".api-class-tab.methods.yui3-tab.yui3-widget.yui3-tab-selected a "+stTabSelected;
+  css += ".api-class-tab.properties.yui3-tab.yui3-widget a "+stTab;
+  css += ".api-class-tab.properties.yui3-tab.yui3-widget.yui3-tab-selected a "+stTabSelected;
+  css += "ul.api-class-tabs.yui3-tabview-list "+stUl;
+  css += "#classdocs .item { border-bottom: 1px solid #007ea9; }";
+    
+  head = document.head || document.getElementsByTagName("head")[0];
+  style = document.createElement("style");
+  style.type = "text/css";
+  if (style.styleSheet){
+    style.styleSheet.cssText = css;
+  } else {
+    style.appendChild(document.createTextNode(css));
+  };
+  head.appendChild(style);  
+};
+
+</script>
+</body>
+</html>
