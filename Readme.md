@@ -73,5 +73,5 @@ The currently used libraries can be replaced with these new ones.
 Until now, the functionality is still very basic and a lot of energy is still needed
 to match the functionality of the original Heron version.
 
-#Heron2 is Open and Free Source
+# Heron2 is Open and Free Source
 Heron2 is available under the [GNU GPL v3 license](https://www.gnu.org/licenses/gpl-3.0.html).
