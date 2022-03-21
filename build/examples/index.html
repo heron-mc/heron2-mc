@@ -28,6 +28,9 @@
 //Heron.DEBUG = false;
 Heron.TEST = false;
 
+Heron.app.showDevPanel = false;
+//Heron.app.showDevPanel = true;
+
 Heron.app.paths.src = "../src";
 
 let appDataItemTpl = ""+
@@ -192,9 +195,6 @@ let appLinks = [{
   href: "https://kadviewer.map5.nl/"
 }];
 
-Heron.app.showDevPanel = false;
-//Heron.app.showDevPanel = true;
-
 Heron.options.layout = {
   xtype: "panel",
   layout: "border",
@@ -238,7 +238,8 @@ Heron.options.layout = {
         items: [{
           bodyCls: "exampleButton",
           border: false,
-          html: "<a href='../doc/index.html' target='_blank'>"+__("Documentation")+"</a>"
+          //html: "<a href='../doc/index.html' target='_blank'>"+__("Documentation")+"</a>"
+          html: ""
         }]
       }]
     }]

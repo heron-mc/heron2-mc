@@ -12,7 +12,9 @@ As a proof-of-concept, a "very basic" version of Heron2 is created based on more
 recent versions of Openlayers, GeoExt and ExtJS. With this we want to demonstrate the
 added value of a renewed Heron for current and potential users.
 
-A live demo of Heron2 is found [here](http://195.201.113.200/heron2/examples/)
+A live demo of Heron2 can be found [here](https://heron2.webmap.nl/examples/)
+
+The source code documentation can be found [here](http://195.201.113.200/heron2/doc/)
 
 # Software
 Heron2 is based on:
@@ -51,7 +53,7 @@ This project contains the following directories:
 * /overrides - files for overriding default OpenLayers, ExtJS, etc. functionality.
 * /resources - resources (css, fonts, i18n files, HeronInit.js).
 * /src - source code files.
-* /yuidoc - Yuiddoc files, templates, etc.
+* /yuidoc - Yuidoc files, templates, etc.
 
 # Examples
 The `/examples` directory contains a variety of Heron2 examples to demonstrate the

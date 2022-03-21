@@ -75,8 +75,8 @@ Heron = {};
  */
 
 // Define and set DEBUG/TEST/LOGGING flags.
-Heron.DEBUG = true;
-//Heron.DEBUG = false;
+//Heron.DEBUG = true;
+Heron.DEBUG = false;
 // Show Test button.
 //Heron.TEST = true;
 Heron.TEST = false;
@@ -109,10 +109,10 @@ Heron.App = null;
  */
 Heron.app = {};
 
-Heron.app.fullVersion = "2.0.0.8";
+Heron.app.fullVersion = "2.0.1";
 Heron.app.version = getVersion(Heron.app.fullVersion);
 Heron.app.title = "Heron " + Heron.app.version;
-Heron.app.date = "14 feb 2022";
+Heron.app.date = "14 mrt 2022";
 Heron.app.author = "Eddy Scheper, ARIS B.V., The Netherlands";
 
 Heron.app.paths = {};
